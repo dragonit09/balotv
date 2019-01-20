@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<title>Video Play</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+<link rel="stylesheet" href="assets/bootstrap-4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="assets/bootstrap-4.2.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<body class="watch">
+
+<div id="header">
+	<div id="header-left">
+		<div id="menu-toggle"><span><i class="fa fa-bars"></i></span></div>
+		<div id="logo"><img src="assets/images/logo.png" alt=""></div>
+		
+	</div>
+	<div id="header-right">
+		<div id="search">
+			<form id="top-search-form">
+				<input type="text" placeholder="Tìm kiếm...">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+		<div id="user-place">
+			<a href="#" title="Đăng nhập" k-popup-open="login"><i class="fa fa-user"></i> ĐĂNG NHẬP</a>
+		</div>
+		<div id="menu-category">
+			<a id="category-toggle" href="#" title="Đăng nhập"><i class="fa fa-grip-horizontal"></i> Danh Mục</a>
+		</div>
+	</div>
+	
+</div>
+<div id="main">
+	<div id="menu-left">
+		<div id="menu-quick-links" class="menu-left-section">
+			<ul>
+				<li><a href="#" class="active"><i class="fa fa-home"></i><span>Trang chủ</span></a></li>
+				<li><a href="#"><i class="fa fa-compact-disc"></i><span>Thịnh hành</span></a></li>
+				<li><a href="#"><i class="fa fa-clock"></i><span>Lịch sử</span></a></li>
+			</ul>
+		</div>
+		<div id="menu-popular-balotv" class="menu-left-section">
+			<h4>Hay nhất trên BaloTV</h4>
+			<ul>
+				<li><a href="#"><i class="fa fa-music"></i><span>Âm nhạc</span></a></li>
+				<li><a href="#"><i class="fa fa-gamepad"></i><span>Trò chơi</span></a></li>
+				<li><a href="#"><i class="fa fa-tv"></i><span>Phim</span></a></li>
+			</ul>
+		</div>
+		<div id="menu-personal" class="menu-left-section">
+			<h4>Cá nhân</h4>
+			<ul>
+				<li><a href="#"><i class="fa fa-cog"></i><span>Cài đặt</span></a></li>
+				<li><a href="#"><i class="fa fa-flag"></i><span>Lịch sử báo cáo</span></a></li>
+				<li><a href="#"><i class="fa fa-question-circle"></i><span>Trợ giúp</span></a></li>
+				<li><a href="#"><i class="fa fa-comment-alt"></i><span>Gửi phản hồi</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="site-container" class="container">
+		<div class="row video-play">
+			<!-- VIDEO PLAY -->
+			<div id="video-play-wrapper">
+				<div class="video-player">
+					<img src="assets/images/banner-2.jpg"/>
+				</div>
+				<h1 class="video-title mt-15">Bé Shark Khiêu vũ | Hát và nhảy! | Songs động vật | PINKFONG Songs for Children</h1>
+				<div class="video-info">
+					<div class="video-views-count">2.193.664.335 lượt xem</div>
+					<div class="video-info-right">
+						<div class="video-like video-control-item">
+							<a id="video-like-up" class="btn-play-tool video-like-btn "><i class="fas fa-thumbs-up"></i> 5 TR</a>
+							<a id="video-like-down" class="btn-play-tool video-dislike-btn "><i class="fas fa-thumbs-down"></i> 1 N</a>
+						</div>
+						<div class="video-download video-control-item">
+							<a class="btn-play-tool video-download-btn"><i class="fas fa-download"></i> TẢI XUỐNG</a>
+						</div>
+						<div class="video-share video-control-item">
+							<a class="btn-play-tool video-share-btn "><i class="fas fa-share-alt"></i> CHIA SẺ</a>
+						</div>
+						<div class="video-save video-control-item">
+							<a class="btn-play-tool video-save-btn "><i class="fas fa-folder-plus"></i> LƯU</a>
+						</div>
+					</div>
+				</div>
+				<div class="video-author pt-30 pb-30">
+					<div class="video-author-info">
+						<div class="video-author-avatar"><a href="#" title=""><img src="assets/images/noavatar.png" /></a></div>
+						<div class="video-author-name pl-10">
+							<div class="video-author-name-1"><a href="#" title="">Charles Cruz</a></div>
+							<div class="video-author-date">Sản xuất 12 tháng 12, 2019</div>
+						</div>
+						<a class="video-follow-button"><i class="fas fa-plus"></i> Theo dõi</a>
+					</div>
+					<div class="video-description clear mt-20">
+						<p>PINKFONG! Không. ứng dụng 1 trẻ em được lựa chọn bởi 100 triệu trẻ em trên toàn thế giới</p>
+						<p>Best Kids Songs & Câu chuyện [Miễn phí Tải về]: <a href="">http://i.sstudy.kr/L/591/des/</a></p>
+					</div>
+					<a class="video-description-viewmore mt-30" href="#">HIỂN THỊ THÊM</a>
+				</div>
+				<div class="video-comment pt-30">
+					<div class="comment-post">
+						<div class="comment-count mb-20">430 Nhận xét</div>
+						<div class="comment-avatar">
+							<a href="#" title=""><img src="assets/images/noavatar.png" /></a>
+						</div>
+						<div class="comment-box pl-10">
+							<form id="comment-form">
+								<textarea class="comment-form-message" placeholder="Viết nhận xét..."></textarea>
+								<div class="comment-form-control mt-5">
+									<button id="comment-cancel" class="comment-cancel btn btn-reset" type="reset">HỦY</button>
+									<button id="comment-submit" class="comment-answer btn btn-second" type="submit">TRẢ LỜI</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="comment-list clear">
+						<div class="comment-item">
+							
+							<div class="comment-item-detail">
+								<div class="comment-avatar">
+									<a href="#" title=""><img src="assets/images/noavatar.png" /></a>
+								</div>
+								<h3 class="comment-author pl-10"><a href="#">Charles Cruz</a> <span class="comment-date ml-5">2 tuần trước</span></h3>
+								
+								<div class="comment-message pl-10">
+									<p>Bài hát quá hay, phù hợp với trẻ nhỏ ....</p>
+								</div>
+								<a class="comment-reply-button" href="#">TRẢ LỜI</a>
+								<div class="comment-reply">
+									<div class="comment-avatar">
+										<a href="#" title=""><img src="assets/images/noavatar.png" /></a>
+									</div>
+									<div class="comment-box-child pl-10">
+										<form id="comment-form-child" class="comment-form-child">
+											<textarea class="comment-form-child-message" placeholder="Thêm câu trả lời..."></textarea>
+											<div class="comment-form-control">
+												<button id="comment-cancel" class="comment-cancel btn btn-reset" type="reset">HỦY</button>
+												<button id="comment-submit" class="comment-answer btn btn-second" type="submit">TRẢ LỜI</button>
+											</div>
+									    </form>
+									</div>
+									<div class="comment-child-list clear">
+										<div class="comment-child-item">
+											<div class="comment-item-detail">
+												<div class="comment-avatar">
+													<a href="#" title=""><img src="assets/images/noavatar.png" /></a>
+												</div>
+												<h3 class="comment-author pl-10"><a href="#">Charles Cruz</a> <span class="comment-date ml-5">2 tuần trước</span></h3>
+												
+												<div class="comment-message pl-10">
+													<p>Lorem ipsum was purposefully designed to have no meaning, but appear like real text, making it the perfect placeholder. Lorem ipsum was purposefully designed to have no meaning, but appear like real text, making it the perfect placeholder. Lorem ipsum was purposefully designed to have no meaning, but appear like real text, making it the perfect placeholder.</p>
+												</div>
+												<a class="comment-reply-button" href="#">TRẢ LỜI</a>
+											</div>
+										</div>
+										<div class="comment-child-item">
+											<div class="comment-item-detail">
+												<div class="comment-avatar">
+													<a href="#" title=""><img src="assets/images/noavatar.png" /></a>
+												</div>
+												<h3 class="comment-author pl-10"><a href="#">Charles Cruz</a> <span class="comment-date ml-5">2 tuần trước</span></h3>
+												
+												<div class="comment-message pl-10">
+													<p>Bài hát quá hay, phù hợp với trẻ nhỏ ....</p>
+												</div>
+												<a class="comment-reply-button" href="#">TRẢ LỜI</a>	
+											</div>
+										</div>
+									</div>
+								</div>
+								<a class="comment-viewmore mb-30" href="#">Xem 8 câu trả lời</a>
+								
+							</div>
+						</div>
+						<div class="comment-item">
+							
+							<div class="comment-item-detail">
+								<div class="comment-avatar">
+									<a href="#" title=""><img src="assets/images/noavatar.png" /></a>
+								</div>
+								<h3 class="comment-author pl-10"><a href="#">Charles Cruz</a> <span class="comment-date ml-5">2 tuần trước</span></h3>
+								
+								<div class="comment-message pl-10">
+									<p>Bài hát quá hay, phù hợp với trẻ nhỏ ....</p>
+								</div>
+								<a class="comment-reply-button" href="#">TRẢ LỜI</a>
+							</div>
+						</div>
+						<div class="comment-item">
+							
+							<div class="comment-item-detail">
+								<div class="comment-avatar">
+									<a href="#" title=""><img src="assets/images/noavatar.png" /></a>
+								</div>
+								<h3 class="comment-author pl-10"><a href="#">Charles Cruz</a> <span class="comment-date ml-5">2 tuần trước</span></h3>
+								
+								<div class="comment-message pl-10">
+									<p>Lorem ipsum was purposefully designed to have no meaning, but appear like real text, making it the perfect placeholder. Lorem ipsum was purposefully designed to have no meaning, but appear like real text, making it the perfect placeholder. Lorem ipsum was purposefully designed to have no meaning, but appear like real text, making it the perfect placeholder.</p>
+								</div>
+								<a class="comment-reply-button" href="#">TRẢ LỜI</a>
+								<a class="comment-viewmore mb-30" href="#">Xem 8 câu trả lời</a>
+								
+							</div>
+						</div>
+						<div class="comment-item">
+							
+							<div class="comment-item-detail">
+								<div class="comment-avatar">
+									<a href="#" title=""><img src="assets/images/noavatar.png" /></a>
+								</div>
+								<h3 class="comment-author pl-10"><a href="#">Charles Cruz</a> <span class="comment-date ml-5">2 tuần trước</span></h3>
+								
+								<div class="comment-message pl-10">
+									<p>Bài hát quá hay, phù hợp với trẻ nhỏ ....</p>
+								</div>
+								<a class="comment-reply-button" href="#">TRẢ LỜI</a>
+								<a class="comment-viewmore mb-30" href="#">Xem 8 câu trả lời</a>
+								
+							</div>
+						</div>
+						<div class="comment-item">
+							
+							<div class="comment-item-detail">
+								<div class="comment-avatar">
+									<a href="#" title=""><img src="assets/images/noavatar.png" /></a>
+								</div>
+								<h3 class="comment-author pl-10"><a href="#">Charles Cruz</a> <span class="comment-date ml-5">2 tuần trước</span></h3>
+								
+								<div class="comment-message pl-10">
+									<p>Bài hát quá hay, phù hợp với trẻ nhỏ ....</p>
+								</div>
+								<a class="comment-reply-button" href="#">TRẢ LỜI</a>
+								<a class="comment-viewmore mb-30" href="#">Xem 8 câu trả lời</a>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="video-play-sidebar">
+				<div class="video-autoplay-control mb-20">
+					<span class="video-autoplay-next">Tiếp theo</span>
+					<span class="video-autoplay-autonext">Tự động phát</span>
+					<span class="video-autoplay-switch">
+						<label class="switch">
+						   <input type="checkbox" checked>
+						   <span class="slider round"></span>
+						</label>
+					</span>
+				</div>
+				<div class="video-next-item pb-20">
+					<div class="video-item">
+						<a href="#"><img src="assets/images/video-img.jpg" alt="" /></a>
+						<div class="video-item-name"><a href="#">Săn Và Bóc Trứng Khủng Long Lấy Đồ Chơi ❤ AnAn ...</a></div>
+						<div class="video-item-author"><a href="#">AnAn ToysReview TV</a></div>
+						<div class="video-item-view-date">
+							<span class="video-item-view">1.3 Tr lượt xem</span>
+							<span class="video-item-date">1 tháng trước</span>
+						</div>
+					</div>
+				</div>
+				<div class="video-recommend pt-10">
+					<div class="video-item">
+						<a href="#"><img src="assets/images/video-img.jpg" alt="" /></a>
+						<div class="video-item-name"><a href="#">Săn Và Bóc Trứng Khủng Long Lấy Đồ Chơi ❤ AnAn ...</a></div>
+						<div class="video-item-author"><a href="#">AnAn ToysReview TV</a></div>
+						<div class="video-item-view-date">
+							<span class="video-item-view">1.3 Tr lượt xem</span>
+							<span class="video-item-date">1 tháng trước</span>
+						</div>
+					</div>
+					<div class="video-item">
+						<a href="#"><img src="assets/images/video-img.jpg" alt="" /></a>
+						<div class="video-item-name"><a href="#">Săn Và Bóc Trứng Khủng Long Lấy Đồ Chơi ❤ AnAn ...</a></div>
+						<div class="video-item-author"><a href="#">AnAn ToysReview TV</a></div>
+						<div class="video-item-view-date">
+							<span class="video-item-view">1.3 Tr lượt xem</span>
+							<span class="video-item-date">1 tháng trước</span>
+						</div>
+					</div>
+					<div class="video-item">
+						<a href="#"><img src="assets/images/video-img.jpg" alt="" /></a>
+						<div class="video-item-name"><a href="#">Săn Và Bóc Trứng Khủng Long Lấy Đồ Chơi ❤ AnAn ...</a></div>
+						<div class="video-item-author"><a href="#">AnAn ToysReview TV</a></div>
+						<div class="video-item-view-date">
+							<span class="video-item-view">1.3 Tr lượt xem</span>
+							<span class="video-item-date">1 tháng trước</span>
+						</div>
+					</div>
+					<div class="video-item">
+						<a href="#"><img src="assets/images/video-img.jpg" alt="" /></a>
+						<div class="video-item-name"><a href="#">Săn Và Bóc Trứng Khủng Long Lấy Đồ Chơi ❤ AnAn ...</a></div>
+						<div class="video-item-author"><a href="#">AnAn ToysReview TV</a></div>
+						<div class="video-item-view-date">
+							<span class="video-item-view">1.3 Tr lượt xem</span>
+							<span class="video-item-date">1 tháng trước</span>
+						</div>
+					</div>
+					<div class="video-item">
+						<a href="#"><img src="assets/images/video-img.jpg" alt="" /></a>
+						<div class="video-item-name"><a href="#">Săn Và Bóc Trứng Khủng Long Lấy Đồ Chơi ❤ AnAn ...</a></div>
+						<div class="video-item-author"><a href="#">AnAn ToysReview TV</a></div>
+						<div class="video-item-view-date">
+							<span class="video-item-view">1.3 Tr lượt xem</span>
+							<span class="video-item-date">1 tháng trước</span>
+						</div>
+					</div>
+					<div class="video-viewmore">
+						<a href="#" title="">Hiển thị thêm</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<div id="footer">
+	<div id="footer-info" class="row">
+		<div id="footer-logo" class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+			<img src="assets/images/logo-big.png" alt="col-xl-" />
+		</div>
+		<div id="footer-introduce" class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
+			<h3>Giới thiệu</h3>
+			<p>Là một starup mạng xã hôik video dành cho các bạn trẻ Việt Nam bao gồm nhều thế hệ khác nhau: giải trí, hài hước vui nhộn, tình cảm</p>
+		</div>
+		<div id="footer-contact" class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+			<h3>Liên hệ</h3>
+			<p>Hotline: 0236 234 324 | <a href="mailto:balotv@gmail.com">balotv@gmail.com</a></p>
+			<p>Liên hệ quảng cáo: 0236 123 123 | <a href="mailto:balotv@gmail.com">duongkyosaki@gmail.com</a></p>
+		</div>
+	</div>
+	<div id="footer-bottom" class="row">
+		<div class="footer-copyright"><p>© 2018 All Rights Reserved Anhrabbit - EFE Technology.</p></div>
+		<div class="footer-social">
+			<ul>
+				<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- POPUP -->
+<div class="popup" k-popup="login">
+    <div class="popup-inner">
+    	<a class="popup-close" k-popup-close="login" href="#"> </a>
+        <div id="popup-login" class="row">
+        	<div id="popup-sign-left" class="">
+        		<h3 class="popup-sign-title">Đăng nhập</h3>
+        		<p class="popup-sign-description">Sign in to continue using website</p>
+        		<form id="popup-sign-form">
+        			<div class="sign-form-li"><input class="sign-form-text" type="text" value="" placeholder="Tài khoản" /></div>
+        			<div class="sign-form-li"><input class="sign-form-text" type="password" value="" placeholder="Mật khẩu" /></div>
+        			<div class="sign-form-li remember-forgot">
+        				<span class="sign-form-remember"><label class="sign-form-label" for="sign-form-checkbox"><input id="sign-form-checkbox" class="sign-form-checkbox" type="checkbox" value="1" /> <span class="checkmark"></span> Remember me</label></span>
+        				<span class="sign-form-forgot"><a href="#">Forgot your password?</a></span>
+        			</div>
+        			<div class="sign-form-li">
+        				<button class="sign-form-button btn btn-primary" type="submit">ĐĂNG NHẬP</button>
+        			</div>
+        		</form>
+        		<p class="popup-sign-or">HOẶC</p>
+        		<div class="popup-sign-social">
+        			<a href="#" class="popup-sign-social-button google btn btn-primary"><i class="fab fa-google"></i> Đăng nhập bằng Google</a>
+        			<a href="#" class="popup-sign-social-button facebook btn btn-primary"><i class="fab fa-facebook-f"></i> Đăng nhập bằng Facebook</a>
+        		</div>
+        		<p class="popup-sign-register-text">Bạn chưa có tài khoản? <a href="#" class="" k-popup-open="register">Đăng ký tại đây</a></p>
+        	</div>
+        	<div id="popup-sign-right" class="">
+				<div class="popup-sign-logo-slogan">
+					<img class="popup-sign-logo" src="assets/images/logo-popup.png" alt="BaloTV Logo" />
+					<p class="popup-sign-slogan">Mạng xã hội dành cho giới trẻ Việt Nam</p>
+				</div>
+        	</div>
+        </div>
+    </div>
+</div>
+<div class="popup" k-popup="register">
+    <div class="popup-inner">
+    	<a class="popup-close" k-popup-close="register" href="#"> </a>
+        <div id="popup-login" class="row">
+        	<div id="popup-sign-left" class="">
+        		<h3 class="popup-sign-title">Đăng ký</h3>
+        		<p class="popup-sign-description">Sign up to continue using website</p>
+        		<form id="popup-sign-form">
+        			<div class="sign-form-li"><input class="sign-form-text" type="text" value="" placeholder="Tài khoản" /></div>
+        			<div class="sign-form-li"><input class="sign-form-text" type="text" value="" placeholder="Email" /></div>
+        			<div class="sign-form-li"><input class="sign-form-text" type="password" value="" placeholder="Mật khẩu" /></div>
+        			<div class="sign-form-li">
+        				<label class="sign-form-file" for="sign-form-file-avatar">
+						    <input id="sign-form-file-avatar" type="file" style="display:none" 
+						    onchange="$('#upload-file-info').html(this.files[0].name)">
+						    <span class="btn btn-primary">Upload Avatar</span>
+						    <span class="sign-form-file-info" id="upload-file-info"></span>
+						</label>
+						
+        			</div>
+        			<div class="sign-form-li">
+        				<button class="sign-form-button btn btn-primary" type="submit">ĐĂNG KÝ</button>
+        			</div>
+        		</form>
+        		<p class="popup-sign-register-text">Bạn đã có tài khoản? <a href="#" class="" k-popup-open="login">Đăng nhập tại đây</a></p>
+        	</div>
+        	<div id="popup-sign-right" class="">
+				<div class="popup-sign-logo-slogan">
+					<img class="popup-sign-logo" src="assets/images/logo-popup.png" alt="BaloTV Logo" />
+					<p class="popup-sign-slogan">Mạng xã hội dành cho giới trẻ Việt Nam</p>
+				</div>
+        	</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
