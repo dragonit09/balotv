@@ -626,7 +626,7 @@ body.channel #recently-viewed.video-list{
   text-align: center;
 }
 #footer{
-	position: relative;
+	/*position: relative;*/
     z-index: 2;    
     overflow: hidden;
 }
