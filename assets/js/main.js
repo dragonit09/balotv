@@ -110,7 +110,7 @@ var Validate = new function(){
                             var response = JSON.parse( e.responseText );
                             var msg = '';
                             if(typeof response.error === 'string'){
-                                msg = response.error;
+                                msg = response.message;
                             } else{
                                 for(let i = 0; i < response.error.errors.length; i++) {
                                   var field = response.error.errors[i].field[0];
@@ -177,7 +177,7 @@ var Validate = new function(){
                             var response = JSON.parse( e.responseText );
                             var msg = '';
                             if(typeof response.error === 'string'){
-                                msg = response.error;
+                                msg = response.message;
                             } else{
                                 for(let i = 0; i < response.error.errors.length; i++) {
                                   var field = response.error.errors[i].field[0];
