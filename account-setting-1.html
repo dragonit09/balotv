@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<title>Upload 1</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+<link rel="stylesheet" href="assets/bootstrap-4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/main.rent.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="assets/bootstrap-4.2.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="assets/js/main.rent.js"></script>
+<!--Style and js for dropzone-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.js"></script>
+<!--End-->
+<body class="account-setting-1">
+
+<div id="header">
+    <div id="header-left">
+        <div id="menu-toggle"><span><i class="fa fa-bars"></i></span></div>
+        <div id="logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></div>
+    </div>
+    <div id="header-right">
+        <div id="search">
+            <form id="top-search-form">
+                <input type="text" placeholder="Tìm kiếm...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+        <div id="user-place">
+            <a href="#" title="User" class="user-avatar"><img src="assets/images/noavatar.png" /></a>
+        </div>
+
+        <div id="upload-video">
+            <a href="#" class="btn btn-primary"><i class="fas fa-cloud-upload-alt"></i> Tải video lên</a>
+        </div>
+        <div id="user-notifcation">
+            <span id="user-notifcation-bell"><i class="far fa-bell"></i></span>
+            <span id="user-notifcation-count">12</span>
+        </div>
+        <div id="menu-category">
+            <a id="category-toggle" href="#" title="Đăng nhập"><i class="fa fa-grip-horizontal"></i> Danh Mục</a>
+        </div>
+    </div>
+
+</div>
+<div id="main">
+    <div id="menu-left">
+        <div id="menu-quick-links" class="menu-left-section">
+            <ul>
+                <li><a href="index.html" class="active"><i class="fa fa-home fa-fw"></i><span>Trang chủ</span></a></li>
+                <li><a href="#"><i class="fa fa-compact-disc fa-fw"></i><span>Thịnh hành</span></a></li>
+                <li><a href="#"><i class="fa fa-clock fa-fw"></i><span>Lịch sử</span></a></li>
+            </ul>
+        </div>
+
+        <div id="menu-quick-links-other" class="menu-left-section">
+            <ul>
+                <li><a href="#"><i class="fa fa-folder-open fa-fw"></i><span>Thư viện</span></a></li>
+                <li><a href="#"><i class="fa fa-file-alt fa-fw"></i><span>Video đã thích</span></a></li>
+                <li><a href="#"><i class="fa fa-save fa-fw"></i><span>Danh sách của tôi</span></a></li>
+            </ul>
+        </div>
+
+        <div id="menu-popular-balotv" class="menu-left-section">
+            <h4>Đăng ký</h4>
+            <ul class="channels-subscriber">
+                <li>
+                    <span class="avatar-channel" style="background-image: url('assets/images/banner-3.jpg');"></span>
+                    <a href="#">Bài hát hay</a>
+                </li>
+                <li>
+                    <span class="avatar-channel" style="background-image: url('assets/images/banner-3.jpg');"></span>
+                    <a href="#">Đan Trường</a>
+                </li>
+                <li>
+                    <span class="avatar-channel" style="background-image: url('assets/images/banner-3.jpg');"></span>
+                    <a href="#">Nguyễn Minh Tuấn</a>
+                </li>
+                <li>
+                    <span class="avatar-channel" style="background-image: url('assets/images/banner-3.jpg');"></span>
+                    <a href="#">Châu Khải Phong</a>
+                </li>
+                <li>
+                    <span class="avatar-channel" style="background-image: url('assets/images/banner-3.jpg');"></span>
+                    <a href="#">SMV colection</a>
+                </li>
+                <li>
+                    <span class="avatar-channel" style="background-image: url('assets/images/banner-3.jpg');"></span>
+                    <a href="#">Bài hát hay</a>
+                </li>
+                <li>
+                    <span class="avatar-channel fa fa-angle-down" style=""></span>
+                    <a href="#" class="show-more">Hiển thị thêm ...</a>
+                </li>
+            </ul>
+        </div>
+        <div id="menu-personal" class="menu-left-section">
+            <h4>Cá nhân</h4>
+            <ul>
+                <li><a href="#"><i class="fa fa-cog"></i><span>Cài đặt</span></a></li>
+                <li><a href="#"><i class="fa fa-flag"></i><span>Lịch sử báo cáo</span></a></li>
+                <li><a href="#"><i class="fa fa-question-circle"></i><span>Trợ giúp</span></a></li>
+                <li><a href="#"><i class="fa fa-comment-alt"></i><span>Gửi phản hồi</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="site-container" class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+                <div class="menu-vertical">
+                    <div class="menu-vertical__item">
+                        <a href="#" class="active">Tài khoản</a>
+                    </div>
+                    <div class="menu-vertical__item">
+                        <a href="#">Mật khẩu</a>
+                    </div>
+                    <div class="menu-vertical__item">
+                        <a href="#">Email</a>
+                    </div>
+                    <div class="menu-vertical__item">
+                        <a href="#">Feddback & Research</a>
+                    </div>
+                    <div class="menu-vertical__item">
+                        <a href="#">Xoá tài khoản</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-5 col-lg-5">
+                <form action="" method="POST" class="form-accout-setting">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+                                <label for="name">Họ và tên</label>
+                            </div>
+                            <div class="col-lg-9 col-sm-9 col-md-9 col-xs-12">
+                                <span class="type_temp">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                </span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col-lg-9 col-sm-9 col-md-9 col-xs-12">
+                                <span class="type_temp">
+                                    <input type="email" id="email" name="email" class="form-control">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
+                                <label for="description">Mô tả</label>
+                            </div>
+                            <div class="col-lg-9 col-sm-9 col-md-9 col-xs-12">
+                                <span class="type_temp">
+                                    <textarea name="description" id="description" cols="30" rows="4" class="form-control"></textarea>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" align="right">
+                        <button type="submit" class="btn-other__submit">CẬP NHẬT</button>
+                        <button type="reset" class="btn-other__cancel">HỦY</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-5 col-lg-5">
+                <div class="account-setting-right__intro">
+                    <img src="assets/images/logo-popup.png" alt="">
+
+                    <p class="title">Mạng xã hội dành cho giới trẻ Việt Nam</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div id="footer">
+    <div id="footer-info" class="row">
+        <div id="footer-logo" class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <img src="assets/images/logo-big.png" alt="col-xl-" />
+        </div>
+        <div id="footer-introduce" class="col-xl-5 col-lg-5 col-md-6 col-sm-12">
+            <h3>Giới thiệu</h3>
+            <p>Là một starup mạng xã hội video dành cho các bạn trẻ Việt Nam bao gồm nhều thế hệ khác nhau: giải trí, hài hước vui nhộn, tình cảm</p>
+        </div>
+        <div id="footer-contact" class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+            <h3>Liên hệ</h3>
+            <p>Hotline: 0236 234 324 | <a href="mailto:balotv@gmail.com">balotv@gmail.com</a></p>
+            <p>Liên hệ quảng cáo: 0236 123 123 | <a href="mailto:balotv@gmail.com">duongkyosaki@gmail.com</a></p>
+        </div>
+    </div>
+    <div id="footer-bottom" class="row">
+        <div class="footer-copyright"><p>© 2018 All Rights Reserved Anhrabbit - EFE Technology.</p></div>
+        <div class="footer-social">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

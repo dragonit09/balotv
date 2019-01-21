@@ -1,12 +1,15 @@
+body.account-setting-1 .account-setting-right__intro,
 body.upload-prepare .upload-right__intro {
     background: #fb441b;
     padding: 80px;
     text-align: center;
 }
+body.account-setting-1 .account-setting-right__intro > img,
 body.upload-prepare .upload-right__intro > img {
     width: 200px;
     margin-bottom: 20px;
 }
+body.account-setting-1 .account-setting-right__intro > .title,
 body.upload-prepare .upload-right__intro > .title {
     color: #ffffff;
     font-size: 14px;
@@ -200,6 +203,7 @@ body.upload-complete button.btn-other__submit {
     text-align: center;
     color: #ffffff;
 }
+
 body.upload-complete button.btn-other__cancel {
     width: 200px;
     height: 50px;
@@ -320,3 +324,81 @@ body.upload-complete .indicator:after {
     border-radius: 50%;
     background: #f9a01b;
 }
+
+/* CSS FOR ACCOUNT SETTING 1 */
+.menu-vertical .menu-vertical__item {
+    margin-bottom: 10px;
+}
+.menu-vertical .menu-vertical__item > a {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+    transition: all .3s;
+}
+.menu-vertical .menu-vertical__item > a:hover {
+    text-decoration: none;
+    color: #fb441b;
+}
+.menu-vertical .menu-vertical__item > a.active {
+    color: #fb441b;
+}
+body.account-setting-1 .form-accout-setting label {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.account-setting-1 .form-accout-setting .form-group {
+    margin-bottom: 20px;
+}
+body.account-setting-1 .form-accout-setting input {
+    height: 40px !important;
+    border-radius: 2px;
+    background-color: rgba(216, 216, 216, 0);
+    border-color: #979797 !important;
+}
+body.account-setting-1 .form-accout-setting textarea {
+    border-radius: 2px;
+    background-color: rgba(216, 216, 216, 0);
+    border-color: #979797 !important;
+}
+body.account-setting-1 button.btn-other__submit {
+    margin-right: 20px;
+    border: none;
+    background: #fb441b;
+    width: 120px;
+    height: 40px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+body.account-setting-1 button.btn-other__cancel {
+    height: 40px;
+    width: 120px;
+    background: transparent;
+    border: 1px solid #fb441b;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+}
+/* END */
