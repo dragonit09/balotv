@@ -120,10 +120,6 @@ img{
     right: 10px;
 }
 
-
-
-
-
 #main #menu-left,
 #header-left{
 	width: 230px;
@@ -1331,6 +1327,29 @@ input:checked + .slider:before {
 	text-align: center;
 }
 /* END WATCH VIDEO */
+/* EMAIL SETTINGS */
+.email-settings{}
+.email-settings .email-setting__item{
+      display: flex;
+    justify-content: space-between;
+}
+.email-setting__item-left{
+      padding-right: 25px;
+}
+.email-setting__item-left h4{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.email-setting__item-left p{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.email-setting__item-switch{
+      position: relative;
+    top: 15px;
+}
 @media screen and (min-width: 1920px) {
 	#header-right #top-search-form input{
 	    width: 700px;
