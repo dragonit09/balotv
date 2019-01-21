@@ -1,0 +1,322 @@
+body.upload-prepare .upload-right__intro {
+    background: #fb441b;
+    padding: 80px;
+    text-align: center;
+}
+body.upload-prepare .upload-right__intro > img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+body.upload-prepare .upload-right__intro > .title {
+    color: #ffffff;
+    font-size: 14px;
+}
+body.upload-prepare .dropzone {
+    border: 2px dashed #979797 !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+    padding: 195px 100px;
+    margin-bottom: 30px;
+}
+body.upload-prepare .dropzone .dz-message > span {
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4a4a4a;
+}
+body.upload-prepare .dropzone .upload-right__other-option {
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 50px;
+}
+body.upload-prepare .dropzone .upload-right__other-option input[type="text"] {
+    border-radius: 0 !important;
+}
+body.upload-prepare .dropzone .icon-first {
+    position: absolute;
+    top: 90px;
+    margin-left: 90px;
+}
+body.upload-prepare .dropzone .icon-first > i {
+    font-size: 100px;
+}
+body.upload-prepare select[name="status"] {
+    width: 205.8px;
+    height: 40px;
+    margin-top: 19px;
+}
+body.upload-prepare .upload-right__updload-other .title {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.upload-prepare .buttons {
+    display: flex;
+}
+body.upload-prepare .buttons > .upload-other {
+    width: 50%;
+    background: #eef1f2;
+    text-align: center;
+    padding: 10px 0;
+}
+body.upload-prepare .buttons > .upload-other > a {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.upload-prepare h1.suggest-and-support__title {
+    /* font-size: 24px; */
+    margin-bottom: 18px;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.upload-prepare .suggest-and-support__content {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #333333;
+}
+
+body.upload-prepare .suggest-and-support__content > a {
+    color: #4a90e2;
+}
+body.upload-complete ul.channels-subscriber > li,
+body.upload-prepare ul.channels-subscriber > li {
+    display: flex;
+}
+body.upload-complete .channels-subscriber .avatar-channel,
+body.upload-prepare .channels-subscriber .avatar-channel {
+    -webkit-background-size: cover;
+    background-size: cover;
+    float: left;
+    width: 25px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+body.upload-complete span.avatar-channel.fa.fa-angle-down,
+body.upload-prepare span.avatar-channel.fa.fa-angle-down {
+    margin-top: 5px;
+    margin-left: 7px;
+    margin-right: 18px;
+}
+body.upload-complete #menu-left,
+body.upload-prepare #menu-left {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+body.upload-complete .image-video-preview {
+    margin-bottom: 20px;
+}
+body.upload-complete .image-video-preview img {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+body.upload-complete .option-left__title {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.upload-complete .option-left__description {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.upload-complete .option-left-first {
+    border-bottom: 1px solid #9b9b9b;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+body.upload-complete .form-group > label {
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.upload-complete .form-group select > option {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.upload-complete input,
+body.upload-complete textarea,
+body.upload-complete select {
+    border-radius: 0 !important;
+    border-color: #979797;
+}
+body.upload-complete button.btn-other__submit {
+    border: none;
+    background: #fb441b;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+body.upload-complete button.btn-other__cancel {
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid #fb441b;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+}
+body.upload-complete .option-left-second > .form-check {
+    margin-bottom: 14px;
+}
+body.upload-complete span.input-group-text {
+    border-radius: 0 !important;
+    border-color: #fb441b;
+    background: #fb441b;
+}
+body.upload-complete span.input-group-text > img {
+    width: 20px;
+    margin: 0px 6px;
+}
+body.upload-complete span.input-group-text i {
+    color: #ffffff;
+    font-size: 13px;
+    transform: rotate(45deg);
+}
+body.upload-complete span.desc {
+    margin-left: 20px;
+}
+
+/* Hide the browser's default checkbox */
+body.upload-complete input[type=radio],
+body.upload-complete input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+body.upload-complete .checkmark {
+    position: absolute;
+    top: -3px !important;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(216, 216, 216, 0);
+    border-radius: 4px;
+    border: 1px solid #b9b9b9;
+}
+body.upload-complete .indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(216, 216, 216, 0);
+    border-radius: 50%;
+    border: 1px solid #b9b9b9;
+}
+/* Custom */
+body.upload-complete label > span.indicator {
+    top: 13px !important;
+}
+/* On mouse-over, add a grey background color */
+body.upload-complete input[type=radio] ~ .indicator,
+body.upload-complete input[type=radio] ~ .checkmark {
+    background: #ffffff;
+}
+body.upload-complete input[type=radio]:hover ~ .indicator,
+body.upload-complete input[type=checkbox]:hover ~ .checkmark {
+    background-color: #f2f2f2;
+}
+/* When the checkbox/indicator is checked, add a color background */
+body.upload-complete input[type=radio]:checked ~ .indicator {
+    background-color: white;
+    border: 1px solid #b9b9b9;
+}
+body.upload-complete input[type=checkbox]:checked ~ .checkmark {
+    /*background-color: #f9a01b;*/
+    /*border: 1px solid #f9a01b;*/
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+body.upload-complete .indicator:after,
+body.upload-complete .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+body.upload-complete input[type=radio]:checked ~ .indicator:after,
+body.upload-complete input[type=checkbox]:checked ~ .checkmark:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+body.upload-complete .checkmark:after {
+    left: 12px;
+    top: 7px;
+    width: 5px;
+    height: 10px;
+    border: solid #fb441b;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+body.upload-complete .indicator:after {
+    top: 5px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #f9a01b;
+}
