@@ -132,10 +132,8 @@ var Validate = new function(){
                         success: function(response) {
                             
                             if(response.isSuccess) {
-                               // If login success, hide Popup login and Replace #user_place
-                               $('[k-popup="login"]').fadeOut(200);
-                               $("#user-place").html('<a href="#" title="User" class="user-avatar"><img src="assets/images/noavatar.png"></a>');
-                                window.location.href = '';
+                               // If register success, hide Popup register and show popup login
+                               $("[k-popup-open=login]").click();
                             }
                             else {
                                $("form#popup-signup-form #sign-error-msg").css({"display":"block"}).html('<div class="alert alert-danger">'+response.message+'</div>');
