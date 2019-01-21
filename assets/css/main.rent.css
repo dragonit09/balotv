@@ -1,14 +1,20 @@
+body.account-setting-delete .account-setting-right__intro,
+body.account-setting-password .account-setting-right__intro,
 body.account-setting-1 .account-setting-right__intro,
 body.upload-prepare .upload-right__intro {
     background: #fb441b;
     padding: 80px;
     text-align: center;
 }
+body.account-setting-delete .account-setting-right__intro > img,
+body.account-setting-password .account-setting-right__intro > img,
 body.account-setting-1 .account-setting-right__intro > img,
 body.upload-prepare .upload-right__intro > img {
     width: 200px;
     margin-bottom: 20px;
 }
+body.account-setting-delete .account-setting-right__intro > .title,
+body.account-setting-password .account-setting-right__intro > .title,
 body.account-setting-1 .account-setting-right__intro > .title,
 body.upload-prepare .upload-right__intro > .title {
     color: #ffffff;
@@ -193,7 +199,6 @@ body.upload-complete button.btn-other__submit {
     background: #fb441b;
     width: 200px;
     height: 50px;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     font-size: 14px;
     font-weight: 600;
     font-style: normal;
@@ -202,14 +207,13 @@ body.upload-complete button.btn-other__submit {
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
+    transition: all .3s;
 }
-
 body.upload-complete button.btn-other__cancel {
     width: 200px;
     height: 50px;
     background: transparent;
     border: 1px solid #fb441b;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     font-size: 14px;
     font-weight: 600;
     font-style: normal;
@@ -218,6 +222,11 @@ body.upload-complete button.btn-other__cancel {
     letter-spacing: normal;
     text-align: center;
     color: #333333;
+    transition: all .3s;
+}
+body.upload-complete button.btn-other__submit:hover,
+body.upload-complete button.btn-other__cancel:hover {
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 body.upload-complete .option-left-second > .form-check {
     margin-bottom: 14px;
@@ -346,8 +355,9 @@ body.upload-complete .indicator:after {
 .menu-vertical .menu-vertical__item > a.active {
     color: #fb441b;
 }
+body.account-setting-password .form-accout-setting-password label,
 body.account-setting-1 .form-accout-setting label {
-    margin-top: 10px;
+    align-items: center;
     font-size: 14px;
     font-weight: 600;
     font-style: normal;
@@ -356,9 +366,11 @@ body.account-setting-1 .form-accout-setting label {
     letter-spacing: normal;
     color: #333333;
 }
+body.account-setting-password .form-accout-setting-password .form-group,
 body.account-setting-1 .form-accout-setting .form-group {
     margin-bottom: 20px;
 }
+body.account-setting-password .form-accout-setting-password input,
 body.account-setting-1 .form-accout-setting input {
     height: 40px !important;
     border-radius: 2px;
@@ -370,13 +382,13 @@ body.account-setting-1 .form-accout-setting textarea {
     background-color: rgba(216, 216, 216, 0);
     border-color: #979797 !important;
 }
+body.account-setting-password button.btn-other__submit,
 body.account-setting-1 button.btn-other__submit {
     margin-right: 20px;
     border: none;
     background: #fb441b;
     width: 120px;
     height: 40px;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     font-size: 14px;
     font-weight: 600;
     font-style: normal;
@@ -385,13 +397,18 @@ body.account-setting-1 button.btn-other__submit {
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
+    transition: all .3s;
 }
+body.account-setting-password button.btn-other__submit:hover,
+body.account-setting-1 button.btn-other__submit:hover {
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+body.account-setting-password button.btn-other__cancel,
 body.account-setting-1 button.btn-other__cancel {
     height: 40px;
     width: 120px;
     background: transparent;
     border: 1px solid #fb441b;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     font-size: 14px;
     font-weight: 600;
     font-style: normal;
@@ -400,5 +417,72 @@ body.account-setting-1 button.btn-other__cancel {
     letter-spacing: normal;
     text-align: center;
     color: #333333;
+    transition: all .3s;
+}
+body.account-setting-password button.btn-other__cancel:hover,
+body.account-setting-1 button.btn-other__cancel:hover {
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 /* END */
+
+body.account-setting-password .form-accout-setting-password .type_temp {
+    position: relative;
+}
+body.account-setting-password .form-accout-setting-password span.overlay_rent {
+    position: absolute;
+    float: right;
+    right: 20px;
+    top: 7px;
+    text-decoration: underline;
+    font-size: 10px;
+    color: #fb441b;
+    cursor: pointer;
+}
+body.account-setting-delete .account-setting-delete__mid > .desc-1 {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+    margin-bottom: 10px;
+}
+body.account-setting-delete .account-setting-delete__mid > .desc-2 {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+    margin-bottom: 10px;
+}
+body.account-setting-delete .account-setting-delete__mid > .desc-3 {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+    margin-bottom: 45px;
+}
+body.account-setting-delete a.btn-other__delete {
+    border: none;
+    background: #fb441b;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    transition: all .3s;
+    padding: 12px 40px;
+    text-decoration: none;
+}
+body.account-setting-delete a.btn-other__delete:hover {
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}

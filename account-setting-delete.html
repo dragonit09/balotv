@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Account setting 4</title>
+<title>Upload 1</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.js"></script>
 <!--End-->
-<body class="account-setting-1">
+<body class="account-setting-delete">
 
 <div id="header">
     <div id="header-left">
@@ -35,7 +35,7 @@
         </div>
 
         <div id="upload-video">
-            <a href="upload.html" class="btn btn-primary"><i class="fas fa-cloud-upload-alt"></i> Tải video lên</a>
+            <a href="#" class="btn btn-primary"><i class="fas fa-cloud-upload-alt"></i> Tải video lên</a>
         </div>
         <div id="user-notifcation">
             <span id="user-notifcation-bell"><i class="far fa-bell"></i></span>
@@ -113,10 +113,10 @@
             <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
                 <div class="menu-vertical">
                     <div class="menu-vertical__item">
-                        <a href="#">Tài khoản</a>
+                        <a href="account-setting-1.html">Tài khoản</a>
                     </div>
                     <div class="menu-vertical__item">
-                        <a href="#" class="active">Mật khẩu</a>
+                        <a href="account-setting-password.html">Mật khẩu</a>
                     </div>
                     <div class="menu-vertical__item">
                         <a href="#">Email</a>
@@ -125,56 +125,26 @@
                         <a href="#">Feddback & Research</a>
                     </div>
                     <div class="menu-vertical__item">
-                        <a href="#">Xoá tài khoản</a>
+                        <a href="account-setting-delete.html" class="active">Xoá tài khoản</a>
                     </div>
 
                 </div>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-5 col-lg-5">
-                <form action="" method="POST" class="form-accout-setting">
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
-                                <label for="name">Mật khẩu cũ</label>
-                            </div>
-                            <div class="col-lg-9 col-sm-9 col-md-9 col-xs-12">
-                                <span class="type_temp">
-                                    <input type="text" id="name" name="name" class="form-control">
-                                </span>
-                            </div>
-                        </div>
-
-
+                <div class="account-setting-delete__mid">
+                    <div class="desc-1">
+                        Chuyện gì đã xảy ra với bạn
                     </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
-                                <label for="password">Mật khẩu mới</label>
-                            </div>
-                            <div class="col-lg-9 col-sm-9 col-md-9 col-xs-12">
-                                <span class="type_temp">
-                                    <input type="password" id="password" name="email" class="form-control">
-                                </span>
-                            </div>
-                        </div>
+                    <div class="desc-2">
+                        Hồ sơ của bạn và tất cả dữ liệu được liên kết với nó bao gồm video &amp; Danh sách phát sẽ bị xóa vĩnh viễn
                     </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12">
-                                <label for="password2">Xác nhận mật khẩu mới</label>
-                            </div>
-                            <div class="col-lg-9 col-sm-9 col-md-9 col-xs-12">
-                                <span class="type_temp">
-                                    <input type="password" id="password2" name="password2" class="form-control">
-                                </span>
-                            </div>
-                        </div>
+                    <div class="desc-3">
+                        Chúng tôi sẽ nhớ bạn rất nhiều
                     </div>
-                    <div class="form-group" align="right">
-                        <button type="submit" class="btn-other__submit">CẬP NHẬT</button>
-                        <button type="reset" class="btn-other__cancel">HỦY</button>
+                    <div class="desc-4">
+                        <a href="#" class="btn-other__delete">XÓA TÀI KHOẢN</a>
                     </div>
-                </form>
+                </div>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-5 col-lg-5">
                 <div class="account-setting-right__intro">
