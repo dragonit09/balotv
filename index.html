@@ -384,15 +384,17 @@
         	<div id="popup-sign-left" class="">
         		<h3 class="popup-sign-title">Đăng nhập</h3>
         		<p class="popup-sign-description">Sign in to continue using website</p>
-        		<form id="popup-sign-form">
-        			<div class="sign-form-li"><input class="sign-form-text" type="text" value="" placeholder="Tài khoản" required/></div>
-        			<div class="sign-form-li"><input class="sign-form-text" type="password" value="" placeholder="Mật khẩu" required/></div>
+        		
+        		<form id="popup-signin-form" class="popup-sign-form">
+        			<div id="sign-error-msg"></div>
+        			<div class="sign-form-li"><input class="sign-form-text" type="text" value="" placeholder="Tài khoản" name="email" required/></div>
+        			<div class="sign-form-li"><input class="sign-form-text" type="password" value="" placeholder="Mật khẩu" name="password" required/></div>
         			<div class="sign-form-li remember-forgot">
         				<span class="sign-form-remember"><label class="sign-form-label" for="sign-form-checkbox"><input id="sign-form-checkbox" class="sign-form-checkbox" type="checkbox" value="1" /> <span class="checkmark"></span> Remember me</label></span>
         				<span class="sign-form-forgot"><a href="#">Forgot your password?</a></span>
         			</div>
         			<div class="sign-form-li">
-        				<button class="sign-form-button btn btn-primary" type="submit">ĐĂNG NHẬP</button>
+        				<button class="sign-form-button btn btn-primary" type="submit" name="submit">ĐĂNG NHẬP</button>
         			</div>
         		</form>
         		<p class="popup-sign-or">HOẶC</p>
@@ -418,10 +420,11 @@
         	<div id="popup-sign-left" class="">
         		<h3 class="popup-sign-title">Đăng ký</h3>
         		<p class="popup-sign-description">Sign up to continue using website</p>
-        		<form id="popup-sign-form">
-        			<div class="sign-form-li"><input class="sign-form-text" type="text" value="" placeholder="Tài khoản" required/></div>
-        			<div class="sign-form-li"><input class="sign-form-text" type="email" value="" placeholder="Email" title="Contact's email (format: xxx@xxx.xxx)" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" /></div>
-        			<div class="sign-form-li"><input class="sign-form-text" type="password" value="" placeholder="Mật khẩu" required/></div>
+        		<form id="popup-signup-form" class="popup-sign-form">
+        			<div id="sign-error-msg"></div>
+        			<div class="sign-form-li"><input class="sign-form-text" type="text" name="username" value="" placeholder="Tài khoản" required/></div>
+        			<div class="sign-form-li"><input class="sign-form-text" type="email" name="email" value="" placeholder="Email" required /></div>
+        			<div class="sign-form-li"><input class="sign-form-text" type="password" name="password" value="" placeholder="Mật khẩu" required/></div>
 					<!-- <div class="sign-form-li">
         				<label class="sign-form-file" for="sign-form-file-avatar">
 						    <input id="sign-form-file-avatar" type="file" style="display:none" 
@@ -431,7 +434,7 @@
 						</label>	
         			</div> -->
         			<div class="sign-form-li">
-        				<button class="sign-form-button btn btn-primary" type="submit">ĐĂNG KÝ</button>
+        				<button class="sign-form-button btn btn-primary" type="submit" name="submit">ĐĂNG KÝ</button>
         			</div>
         		</form>
         		<p class="popup-sign-register-text">Bạn đã có tài khoản? <a href="#" class="" k-popup-open="login">Đăng nhập tại đây</a></p>

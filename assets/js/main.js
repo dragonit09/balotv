@@ -1,4 +1,9 @@
 $( document ).ready(function() {
+
+    function isEmail(email) {
+      var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      return regex.test(email);
+    }
     console.log( "ready!" );
     //----- OPEN POPUP
     $( "body" ).on( "click", "[k-popup-open]", function(e) {
@@ -35,5 +40,113 @@ $( document ).ready(function() {
 
         e.preventDefault();
     });
+    $( "form#popup-signin-form" ).on( "submit", function( e ) {
+        e.preventDefault();
+        var email = $( "form#popup-signin-form input[name=email]" ).val();
+        var password = $( "form#popup-signin-form input[name=password]" ).val();
 
+    });
 });
+var Validate = new function(){
+    this.email = '';
+    this.password = '';
+    this.username = '';
+
+    this.setInfo = function(email, password, username){
+        this.email = email;
+        this.password = password;
+        this.username = username;
+    };
+
+    this.isEmail = function(){
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        return regex.test(this.email);
+    };
+
+    this.doLogin = function(){
+        if(this.email == '' || this.isEmail(this.email) == false || this.password == ''){
+            // Warn if email and password empty or wrong format.
+            $("form#popup-signin-form #sign-error-msg").css({"display":"block"}).html('<div class="alert alert-danger">Vui lòng nhập đầy đủ thông tin Email và Password!</div>');
+            if(this.email == '' || this.isEmail(this.email) == false){
+                $("form#popup-signin-form").find("input[type=email]").css({"border":"1px solid #ff0000"});
+            }
+            if( this.password == '' ){
+                $("form#popup-signin-form").find("input[type=password]").css({"border":"1px solid #ff0000"});
+            }
+        } else {
+            $.ajax({
+                        type : "POST",
+                        dataType : "JSON",
+                        url : '/login',
+                        data : {
+                            email: this.email,
+                            password : this.password
+                        },
+                        context: this,
+                        beforeSend: function(){},
+                        success: function(response) {
+                            
+                            if(response.isSuccess) {
+                               // If login success, hide Popup login and Replace #user_place
+                               $('[k-popup="login"]').fadeOut(200);
+                               $("#user-place").html('<a href="#" title="User" class="user-avatar"><img src="assets/images/noavatar.png"></a>');
+                                window.location.href = '';
+                            }
+                            else {
+                               $("form#popup-signin-form #sign-error-msg").css({"display":"block"}).html('<div class="alert alert-danger">'+response.message+'</div>');
+                               
+                            }
+                        },
+                        error: function( jqXHR, textStatus, errorThrown ){
+                           
+                            console.log( 'The following error occured: ' + textStatus, errorThrown );
+                        }
+            });
+        }
+    };
+    this.doRegister = function(){
+        if( this.email == '' || this.isEmail(this.email) == false || this.password == '' || this.username == ''){
+            // Warn if email and password empty or wrong format.
+            $("form#popup-signup-form #sign-error-msg").css({"display":"block"}).html('<div class="alert alert-danger">Vui lòng nhập đầy đủ thông tin Email và Password!</div>');
+            if(this.email == '' || this.isEmail(this.email) == false){
+                $("form#popup-signup-form").find("input[type=email]").css({"border":"1px solid #ff0000"});
+            }
+            if( this.password == '' ){
+                $("form#popup-signup-form").find("input[type=password]").css({"border":"1px solid #ff0000"});
+            }
+            if( this.username == '' ){
+                $("form#popup-signup-form").find("input[type=text]").css({"border":"1px solid #ff0000"});
+            }
+        } else {
+            $.ajax({
+                        type : "POST",
+                        dataType : "JSON",
+                        url : '/register',
+                        data : {
+                            email: this.email,
+                            password : this.password,
+                            name : this.username
+                        },
+                        context: this,
+                        beforeSend: function(){},
+                        success: function(response) {
+                            
+                            if(response.isSuccess) {
+                               // If login success, hide Popup login and Replace #user_place
+                               $('[k-popup="login"]').fadeOut(200);
+                               $("#user-place").html('<a href="#" title="User" class="user-avatar"><img src="assets/images/noavatar.png"></a>');
+                                window.location.href = '';
+                            }
+                            else {
+                               $("form#popup-signup-form #sign-error-msg").css({"display":"block"}).html('<div class="alert alert-danger">'+response.message+'</div>');
+                               
+                            }
+                        },
+                        error: function( jqXHR, textStatus, errorThrown ){
+                           
+                            console.log( 'The following error occured: ' + textStatus, errorThrown );
+                        }
+            });
+        }
+    };
+}

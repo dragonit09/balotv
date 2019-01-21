@@ -867,16 +867,16 @@ body.channel #recently-viewed.video-list{
 .popup-sign-or{
 	margin: 16px 0;
 }
-form#popup-sign-form{}
-form#popup-sign-form .sign-form-li{
+form.popup-sign-form{}
+form.popup-sign-form .sign-form-li{
 	width: 100%;
 	margin-bottom: 20px;
 }
-form#popup-sign-form .sign-form-li.remember-forgot{
+form.popup-sign-form .sign-form-li.remember-forgot{
 	display: flex;
     justify-content: space-between;
 }
-form#popup-sign-form .sign-form-li .sign-form-text{
+form.popup-sign-form .sign-form-li .sign-form-text{
     height: 50px;
     width: 100%;
     border: 0;
@@ -885,7 +885,7 @@ form#popup-sign-form .sign-form-li .sign-form-text{
     padding-left: 20px;
     color: #9b9b9b;
 }
-form#popup-sign-form .sign-form-li .sign-form-file{
+form.popup-sign-form .sign-form-li .sign-form-file{
     width: 100%;
     border: 0;
     border-radius: 4px;
@@ -894,23 +894,26 @@ form#popup-sign-form .sign-form-li .sign-form-file{
     padding: 0;
     text-align: left;
 }
-form#popup-sign-form .sign-form-li .sign-form-file .btn.btn-primary{
+form.popup-sign-form .sign-form-li .sign-form-file .btn.btn-primary{
 	font-size: 14px;
 }
-form#popup-sign-form .sign-form-li input[type=file]{
+form.popup-sign-form .sign-form-li input[type=file]{
 	display: none;
 }
-form#popup-sign-form .sign-form-li .sign-form-file-info{
+form.popup-sign-form .sign-form-li .sign-form-file-info{
 	margin-left: 15px;
 }
-form#popup-sign-form .sign-form-li .sign-form-remember{
+form.popup-sign-form .sign-form-li .sign-form-remember{
 	font-size: 12px;
 	color: #333;
 }
-form#popup-sign-form .sign-form-li .sign-form-forgot{}
-form#popup-sign-form .sign-form-li .sign-form-forgot a{
+form.popup-sign-form .sign-form-li .sign-form-forgot{}
+form.popup-sign-form .sign-form-li .sign-form-forgot a{
     color: #4a90e2;
     font-size: 12px;
+}
+#sign-error-msg{
+  display: none;
 }
 .sign-form-label {
   display: block;
