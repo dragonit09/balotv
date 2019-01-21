@@ -160,8 +160,18 @@ var Validate = new function(){
                             }
                         },
                         error: function( jqXHR, textStatus, errorThrown ){
-                           
-                            console.log( 'The following error occured: ' + textStatus, errorThrown );
+                            var response = JSON.parse( e.responseText );
+                            var msg = '';
+                              for(let i = 0; i < response.error.errors.length; i++) {
+                                  var field = response.error.errors[i].field[0];
+                                  var messages = response.error.errors[i].messages;
+                                  console.log(messages);
+                                  for(let z = 0; z < messages.length; z++) {
+                                      msg = msg + messages[z] + '<br/>';
+                                  }
+                              }
+                             $("form#popup-signup-form #sign-error-msg").css({"display":"block"}).html('<div class="alert alert-danger">'+msg+'<a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a></div>');
+                             
                         }
             });
         }
