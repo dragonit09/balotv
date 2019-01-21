@@ -44,7 +44,16 @@ $( document ).ready(function() {
         e.preventDefault();
         var email = $( "form#popup-signin-form input[name=email]" ).val();
         var password = $( "form#popup-signin-form input[name=password]" ).val();
-
+        Validate.setInfo(email, password, '');
+        Validate.doLogin();
+    });
+    $( "form#popup-signup-form" ).on( "submit", function( e ) {
+        e.preventDefault();
+        var email = $( "form#popup-signup-form input[name=email]" ).val();
+        var password = $( "form#popup-signup-form input[name=password]" ).val();
+        var username = $( "form#popup-signup-form input[name=username]" ).val();
+        Validate.setInfo(email, password, username);
+        Validate.doRegister();
     });
 });
 var Validate = new function(){
@@ -66,7 +75,7 @@ var Validate = new function(){
     this.doLogin = function(){
         if(this.email == '' || this.isEmail(this.email) == false || this.password == ''){
             // Warn if email and password empty or wrong format.
-            $("form#popup-signin-form #sign-error-msg").css({"display":"block"}).html('<div class="alert alert-danger">Vui lòng nhập đầy đủ thông tin Email và Password!</div>');
+            $("form#popup-signin-form #sign-error-msg").css({"display":"block"}).html('<div class="alert alert-danger">Vui lòng nhập đầy đủ thông tin Email và Password!<a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a></div>');
             if(this.email == '' || this.isEmail(this.email) == false){
                 $("form#popup-signin-form").find("input[type=email]").css({"border":"1px solid #ff0000"});
             }
@@ -93,7 +102,7 @@ var Validate = new function(){
                                 window.location.href = '';
                             }
                             else {
-                               $("form#popup-signin-form #sign-error-msg").css({"display":"block"}).html('<div class="alert alert-danger">'+response.message+'</div>');
+                               $("form#popup-signin-form #sign-error-msg").css({"display":"block"}).html('<div class="alert alert-danger">'+response.message+'<a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a></div>');
                                
                             }
                         },
@@ -107,7 +116,7 @@ var Validate = new function(){
     this.doRegister = function(){
         if( this.email == '' || this.isEmail(this.email) == false || this.password == '' || this.username == ''){
             // Warn if email and password empty or wrong format.
-            $("form#popup-signup-form #sign-error-msg").css({"display":"block"}).html('<div class="alert alert-danger">Vui lòng nhập đầy đủ thông tin Email và Password!</div>');
+            $("form#popup-signup-form #sign-error-msg").css({"display":"block"}).html('<div class="alert alert-danger">Vui lòng nhập đầy đủ thông tin Email và Password!<a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a></div>');
             if(this.email == '' || this.isEmail(this.email) == false){
                 $("form#popup-signup-form").find("input[type=email]").css({"border":"1px solid #ff0000"});
             }
@@ -136,7 +145,17 @@ var Validate = new function(){
                                $("[k-popup-open=login]").click();
                             }
                             else {
-                               $("form#popup-signup-form #sign-error-msg").css({"display":"block"}).html('<div class="alert alert-danger">'+response.message+'</div>');
+                                //console.log(response);
+                                var msg = '';
+                                for(let i = 0; i < response.error.errors.length; i++) {
+                                    var field = response.error.errors[i].field[0];
+                                    var messages = response.error.errors[i].messages;
+                                    console.log(messages);
+                                    for(let z = 0; z < messages.length; z++) {
+                                        msg = msg + messages[z] + '<br/>';
+                                    }
+                                }
+                               $("form#popup-signup-form #sign-error-msg").css({"display":"block"}).html('<div class="alert alert-danger">'+msg+'<a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a></div>');
                                
                             }
                         },
