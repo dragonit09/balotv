@@ -1354,6 +1354,9 @@ input:checked + .slider:before {
 	#header-right #top-search-form input{
 	    width: 700px;
 	}
+  #site-container{
+    min-height: 1080px;
+  }
 /*	#main #site-container.container{
 		max-width: 1420px;
 	}*/

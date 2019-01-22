@@ -98,8 +98,8 @@ var Validate = new function(){
                             if(response.isSuccess) {
                                // If login success, hide Popup login and Replace #user_place
                                $('[k-popup="login"]').fadeOut(200);
-                               $("#user-place").html('<a href="#" title="User" class="user-avatar"><img src="assets/images/noavatar.png"></a>');
-                                window.location.href = '/';
+                               $("#user-place").html('<a href="#" title="'+response.user.name+'" class="user-avatar"><img src="imageupload/'+response.user.avatar+'"></a>');
+                               // window.location.href = '/';
                             }
                             else {
                                $("form#popup-signin-form #sign-error-msg").css({"display":"block"}).html('<div class="alert alert-danger">'+response.message+'<a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a></div>');
