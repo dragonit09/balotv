@@ -2,53 +2,50 @@
     "isSuccess": false,
     "message": "validation error",
     "error": {
-    "status": 400,
-    "statusText": "Bad Request",
-    "errors": [
-    {
-    "field": [
-    "name"
-    ],
-    "location": "body",
-    "messages": [
-    "\"name\" is not allowed to be empty",
-    "\"name\" length must be at least 5 characters long"
-    ],
-    "types": [
-    "any.empty",
-    "string.min"
-    ]
-    },
-    {
-    "field": [
-    "email"
-    ],
-    "location": "body",
-    "messages": [
-    "\"email\" is not allowed to be empty",
-    "\"email\" must be a valid email"
-    ],
-    "types": [
-    "any.empty",
-    "string.email"
-    ]
-    },
-    {
-    "field": [
-    "password"
-    ],
-    "location": "body",
-    "messages": [
-    "\"password\" is not allowed to be empty",
-    "\"password\" with value \"\" fails to match the required pattern: /^[a-zA-Z0-9]{5,30}$/",
-    "\"password\" length must be at least 3 characters long"
-    ],
-    "types": [
-    "any.empty",
-    "string.regex.base",
-    "string.min"
-    ]
+        "status": 400,
+        "statusText": "Bad Request",
+        "errors": [
+            {
+            "field": [
+                "name"
+            ],
+            "location": "body",
+            "messages": [
+                "\"name\" is not allowed to be empty",
+                "\"name\" length must be at least 5 characters long"
+            ],
+            "types": [
+                "any.empty",
+                "string.min"
+            ]}, {
+                "field": [
+                    "email"
+                ],
+                "location": "body",
+                "messages": [
+                    "\"email\" is not allowed to be empty",
+                    "\"email\" must be a valid email"
+                ],
+                "types": [
+                    "any.empty",
+                    "string.email"
+                ]
+            }, {
+                "field": [
+                    "password"
+                ],
+                "location": "body",
+                "messages": [
+                    "\"password\" is not allowed to be empty",
+                    "\"password\" with value \"\" fails to match the required pattern: /^[a-zA-Z0-9]{5,30}$/",
+                    "\"password\" length must be at least 3 characters long"
+                ],
+                "types": [
+                    "any.empty",
+                    "string.regex.base",
+                    "string.min"
+                ]
+            }
+        ]
     }
-    ]
-    }
-    }
+}

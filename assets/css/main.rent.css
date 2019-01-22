@@ -20,13 +20,21 @@ body.upload-prepare .upload-right__intro > .title {
     color: #ffffff;
     font-size: 14px;
 }
+body.upload-prepare .row.upload-prepare__content {
+    display: flex;
+}
+
+body.upload-prepare .row.upload-prepare__content > div {
+    flex: 1;
+}
 body.upload-prepare .dropzone {
     border: 2px dashed #979797 !important;
     -webkit-border-radius: 4px !important;
     -moz-border-radius: 4px !important;
     border-radius: 4px !important;
-    padding: 195px 100px;
+    padding: 81px 100px;
     margin-bottom: 30px;
+    margin-right: 30px;
 }
 body.upload-prepare .dropzone .dz-message > span {
     font-size: 24px;
@@ -47,7 +55,7 @@ body.upload-prepare .dropzone .upload-right__other-option input[type="text"] {
     border-radius: 0 !important;
 }
 body.upload-prepare .dropzone .icon-first {
-    position: relative;    
+    position: relative;
     text-align: center;
 }
 body.upload-prepare .dropzone .icon-first > i {
@@ -234,10 +242,11 @@ body.upload-complete span.input-group-text {
     border-radius: 0 !important;
     border-color: #fb441b;
     background: #fb441b;
+    cursor: pointer;
 }
 body.upload-complete span.input-group-text > img {
     width: 20px;
-    margin: 0px 6px;
+    margin: 0 6px;
 }
 body.upload-complete span.input-group-text i {
     color: #ffffff;
@@ -264,7 +273,7 @@ body.upload-complete .checkmark {
     left: 0;
     height: 30px;
     width: 30px;
-    background-color: rgba(216, 216, 216, 0);
+    background-color: rgba(216, 216, 216, 0) !important;
     border-radius: 4px;
     border: 1px solid #b9b9b9;
 }
@@ -284,21 +293,17 @@ body.upload-complete label > span.indicator {
 }
 /* On mouse-over, add a grey background color */
 body.upload-complete input[type=radio] ~ .indicator,
-body.upload-complete input[type=radio] ~ .checkmark {
-    background: #ffffff;
+body.upload-complete input[type=checkbox] ~ .checkmark {
+    background: #f9f9f9;
 }
 body.upload-complete input[type=radio]:hover ~ .indicator,
 body.upload-complete input[type=checkbox]:hover ~ .checkmark {
-    background-color: #f2f2f2;
+    background: #b9b9b9;
 }
 /* When the checkbox/indicator is checked, add a color background */
-body.upload-complete input[type=radio]:checked ~ .indicator {
-    background-color: white;
-    border: 1px solid #b9b9b9;
-}
+body.upload-complete input[type=radio]:checked ~ .indicator,
 body.upload-complete input[type=checkbox]:checked ~ .checkmark {
-    /*background-color: #f9a01b;*/
-    /*border: 1px solid #f9a01b;*/
+    background-color: #f9f9f9;
 }
 /* Create the checkmark/indicator (hidden when not checked) */
 body.upload-complete .indicator:after,
@@ -314,12 +319,12 @@ body.upload-complete input[type=checkbox]:checked ~ .checkmark:after {
 }
 /* Style the checkmark/indicator */
 body.upload-complete .checkmark:after {
-    left: 12px;
-    top: 7px;
-    width: 5px;
-    height: 10px;
+    left: 11px;
+    top: 5px;
+    width: 8px;
+    height: 15px;
     border: solid #fb441b;
-    border-width: 0 2px 2px 0;
+    border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);

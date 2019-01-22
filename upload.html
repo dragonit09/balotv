@@ -100,36 +100,26 @@
         </div>
     </div>
     <div id="site-container" class="container">
-        <div class="row">
-            <div id="upload-left" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="upload-dropzone">
-                    <form action="#" class="dropzone" id="video-upload" method="POST" enctype="multipart/form-data">
-                        <div class="icon-first">
-                            <i class="fa fa-cloud-upload-alt"></i>
-                        </div>
-                        <div class="upload-right__other-option">
-                            <div class="choose-file">
-                                <input type="text" class="btn btn-primary" value="Hoặc chọn tệp">
-                            </div>
-                            <select name="status" id="">
-                                <option value="">Công khai</option>
-                                <option value="">Chỉ mình tôi</option>
-                                <option value="">Other</option>
-                            </select>
-                        </div>
-                    </form>
-                </div>
-                <div class="suggest-and-support">
-                    <h1 class="suggest-and-support__title">Trợ giúp và đề xuất</h1>
-                    <div class="suggest-and-support__content">
-                    Bằng cách đăng video lên BaloTV, bạn xác nhận rằng mình đồng ý với <a href="#">Điều khoản dịch vụ</a> và
-                    <a href="#">Nguyên tắc cộng đồng</a> của BaloTV.
-                    Bạn hãy nhớ không được vi phạm bản quyền hoặc quyền riêng tư của người khác. <a href="#">Tìm hiểu thêm</a>
+        <div class="row upload-prepare__content">
+            <div class="upload-dropzone">
+                <form action="#" class="dropzone" id="video-upload" method="POST" enctype="multipart/form-data">
+                    <div class="icon-first">
+                        <i class="fa fa-cloud-upload-alt"></i>
                     </div>
-                </div>
+                    <div class="upload-right__other-option">
+                        <div class="choose-file">
+                            <input type="text" class="btn btn-primary" value="Hoặc chọn tệp">
+                        </div>
+                        <select name="status" id="">
+                            <option value="">Công khai</option>
+                            <option value="">Chỉ mình tôi</option>
+                            <option value="">Other</option>
+                        </select>
+                    </div>
+                </form>
             </div>
 
-            <div id="upload-right" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div id="upload-right" > <!-- class="col-xs-12 col-sm-12 col-md-6 col-lg-6" -->
                 <div class="upload-right__intro">
                     <img src="assets/images/logo-popup.png" alt="">
 
@@ -155,6 +145,18 @@
                 </div>
             </div>
 
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="suggest-and-support">
+                    <h1 class="suggest-and-support__title">Trợ giúp và đề xuất</h1>
+                    <div class="suggest-and-support__content">
+                        Bằng cách đăng video lên BaloTV, bạn xác nhận rằng mình đồng ý với <a href="#">Điều khoản dịch vụ</a> và
+                        <a href="#">Nguyên tắc cộng đồng</a> của BaloTV.
+                        Bạn hãy nhớ không được vi phạm bản quyền hoặc quyền riêng tư của người khác. <a href="#">Tìm hiểu thêm</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
