@@ -55,6 +55,16 @@ $( document ).ready(function() {
         Validate.setInfo(email, password, username);
         Validate.doRegister();
     });
+    $( "#display-list" ).on( "click", "a#show-tool-list", function(e) {
+        e.preventDefault();
+        if($(this).next().is(":visible")){
+            $(this).next().slideToggle(); 
+        }else{
+           $("#display-list #list-tools:visible").toggle();
+           $(this).next().slideToggle(); 
+        }
+        
+    });
 });
 var Validate = new function(){
     this.email = '';
