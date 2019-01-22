@@ -39,17 +39,16 @@ body.upload-prepare .dropzone .dz-message > span {
     color: #4a4a4a;
 }
 body.upload-prepare .dropzone .upload-right__other-option {
-    position: absolute;
-    margin-top: 75px;
-    margin-left: 50px;
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
 }
 body.upload-prepare .dropzone .upload-right__other-option input[type="text"] {
     border-radius: 0 !important;
 }
 body.upload-prepare .dropzone .icon-first {
-    position: absolute;
-    top: 90px;
-    margin-left: 90px;
+    position: relative;    
+    text-align: center;
 }
 body.upload-prepare .dropzone .icon-first > i {
     font-size: 100px;
