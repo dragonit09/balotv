@@ -690,7 +690,6 @@ body.channel #recently-viewed.video-list{
 }
 #footer{
 	  position: relative;
-    z-index: 2;    
     overflow: hidden;
 }
 #footer #footer-info{
@@ -946,8 +945,8 @@ form.popup-sign-form .sign-form-li .sign-form-forgot a{
     border-radius: 2px;
 }
 
-.container:hover input ~ .checkmark {
-  background-color: #ccc;
+.sign-form-label:hover input ~ .checkmark {
+  background-color: #f9f9f9;
 }
 
 .sign-form-label input:checked ~ .checkmark {
