@@ -600,19 +600,25 @@ body.narrow #footer #footer-info{
 #video-play-sidebar .video-item > .video-item-view-date{
 
 }
-.video-viewmore{
+.video-viewmore,
+.channel-viewmore{
     background-color: #fb441b;
     padding: 13px 54px;
     margin: 0 auto;
     cursor: pointer;
 }
-.video-viewmore:hover{
+.video-viewmore:hover,
+.channel-viewmore:hover{
 	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
-.video-viewmore a{
+.video-viewmore a,
+.channel-viewmore a{
     color: #fff;
     font-weight: 600;
     text-transform: uppercase;
+}
+.channel-viewmore{
+  margin-top: 40px;
 }
 /* CHANNEL PAGE */
 .channel-top{
@@ -713,6 +719,42 @@ body.channel .video-list{
 body.channel #recently-viewed.video-list{
 	margin-top: 70px;
 }
+/* LIST CHANNEL */
+.channel-list{}
+.channel-list .channel-list-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    margin: 0;
+}
+.channel-list .channel-item{}
+.channel-list .channel-item img{}
+.channel-list .channel-item .channel-item-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.channel-list .channel-item .channel-item-info .channel-item-name{}
+.channel-list .channel-item .channel-item-info .channel-item-name .channel-name{
+  font-weight: 600;
+  font-size: 16px;
+}
+.channel-list .channel-item .channel-item-info .channel-item-name .channel-follow-count{
+  font-weight: 500;
+  font-size: 14px;
+}
+.channel-list .channel-item .channel-item-info .channel-subcriber{}
+.channel-list .channel-item .channel-item-info .channel-subcriber a{
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+.channel-list .channel-item .channel-item-info .channel-subcriber:hover{
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+/* LIST CATEGORY */
 .category-list .video-item .video-item-name{
   text-align: center;
 }
