@@ -732,6 +732,7 @@ body.narrow #footer #footer-info{
     font-size: 40px;
     color: #fff;
     font-weight: 700;
+    line-height: 40px;
 }
 .channel-top .my-channel-info .my-channel-statistic{
 
@@ -899,7 +900,8 @@ body.channel #recently-viewed.video-list{
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
   width: 156px;
   list-style-type: none;
-  
+  top: 30px;
+    right: 0;
   position: absolute;
 }
 .display-tools .list-tools li{
@@ -918,7 +920,8 @@ body.channel #recently-viewed.video-list{
 
 .viewmore{
   width: 80%;
-  clear: both;
+  clear: both;    
+  margin: 0;
 }
 #footer{
 	  position: relative;

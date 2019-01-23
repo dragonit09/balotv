@@ -4,7 +4,7 @@ $( document ).ready(function() {
       var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
       return regex.test(email);
     }
-    if(screen.width <= 480){
+    if(screen.width <= 640){
         $( "#header-right" ).on( "click", "#search #mobile-search-btn", function(e) {
             //console.log(e.which);
             e.preventDefault();
