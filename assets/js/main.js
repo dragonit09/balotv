@@ -1,8 +1,20 @@
 $( document ).ready(function() {
-
+    if(screen.width <= 1280) $("body").addClass("menu-over narrow");
     function isEmail(email) {
       var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
       return regex.test(email);
+    }
+    if(screen.width <= 480){
+        $( "#header-right" ).on( "click", "#search #mobile-search-btn", function(e) {
+            //console.log(e.which);
+            e.preventDefault();
+            if($("#header-right #top-search-form input").hasClass("show-search")){
+                $("#header-right #top-search-form input").removeClass("show-search");
+            }else{
+                $("#header-right #top-search-form input").addClass("show-search");
+            }
+            
+        });
     }
     console.log( "ready!" );
     //----- OPEN POPUP
