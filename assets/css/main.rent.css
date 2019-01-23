@@ -1,3 +1,57 @@
+body.home .review-image {
+    background: #979797;
+    padding: 100px;
+}
+body.home .review-image > img {
+    width: 70px;
+    height: 70px;
+}
+body.home .popup-response__rent .popup-content__title {
+    background-color: #fb441b;
+    padding: 13px;
+    margin-bottom: 20px;
+}
+body.home .popup-response__rent .popup-content__title > h3 {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+body.home .popup-response__rent .popup-content__fields {
+    margin: 0 20px;
+}
+body.home .popup-response__rent .popup-content__fields .form-check {
+    text-align: left;
+    clear: both;
+    margin-bottom: 20px;
+}
+body.home .popup-response__rent span.desc {margin-left: 25px;}
+body.home .popup-response__rent .popup-content__buttons {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+body.home .popup-response__rent .popup-content__buttons a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+    text-decoration: underline;
+    margin-right: 40px;
+}
+body.home .popup-response__rent .popup-content__buttons button {
+    border: none;
+    background-color: #fb441b;
+    padding: 13px 65px;
+}
+
 body.account-setting-delete .account-setting-right__intro,
 body.account-setting-password .account-setting-right__intro,
 body.account-setting-1 .account-setting-right__intro,
@@ -259,6 +313,7 @@ body.upload-complete span.desc {
 
 /* Hide the browser's default checkbox */
 body.upload-complete input[type=radio],
+body.home .popup-response__rent input[type=checkbox],
 body.upload-complete input[type=checkbox] {
     position: absolute;
     opacity: 0;
@@ -267,6 +322,7 @@ body.upload-complete input[type=checkbox] {
     width: 0;
 }
 /* Create a custom checkbox */
+body.home .popup-response__rent .checkmark,
 body.upload-complete .checkmark {
     position: absolute;
     top: -3px !important;
@@ -293,20 +349,24 @@ body.upload-complete label > span.indicator {
 }
 /* On mouse-over, add a grey background color */
 body.upload-complete input[type=radio] ~ .indicator,
+body.home .popup-response__rent input[type=checkbox] ~ .checkmark,
 body.upload-complete input[type=checkbox] ~ .checkmark {
     background: #f9f9f9;
 }
 body.upload-complete input[type=radio]:hover ~ .indicator,
+body.home .popup-response__rent input[type=checkbox]:hover ~ .checkmark,
 body.upload-complete input[type=checkbox]:hover ~ .checkmark {
     background: #b9b9b9;
 }
 /* When the checkbox/indicator is checked, add a color background */
 body.upload-complete input[type=radio]:checked ~ .indicator,
-body.upload-complete input[type=checkbox]:checked ~ .checkmark {
+body.upload-complete input[type=checkbox]:checked ~ .checkmark,
+body.home .popup-response__rent input[type=checkbox]:checked ~ .checkmark {
     background-color: #f9f9f9;
 }
 /* Create the checkmark/indicator (hidden when not checked) */
 body.upload-complete .indicator:after,
+body.home .popup-response__rent .checkmark:after,
 body.upload-complete .checkmark:after {
     content: "";
     position: absolute;
@@ -314,10 +374,12 @@ body.upload-complete .checkmark:after {
 }
 /* Show the checkmark when checked */
 body.upload-complete input[type=radio]:checked ~ .indicator:after,
+body.home .popup-response__rent input[type=checkbox]:checked ~ .checkmark:after,
 body.upload-complete input[type=checkbox]:checked ~ .checkmark:after {
     display: block;
 }
 /* Style the checkmark/indicator */
+body.home .popup-response__rent .checkmark:after,
 body.upload-complete .checkmark:after {
     left: 11px;
     top: 5px;

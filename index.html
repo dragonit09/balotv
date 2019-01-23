@@ -5,12 +5,54 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
 <link rel="stylesheet" href="assets/bootstrap-4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/main.rent.css">
 <link rel="stylesheet" href="assets/css/main.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="assets/bootstrap-4.2.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="assets/js/main.rent.js"></script>
 <body class="home">
 
+<div class="popup popup-response__rent" k-popup="response">
+	<div class="popup-inner">
+		<form action="" method="POST">
+			<div id="popup-response" class="popup-content">
+
+				<div class="popup-content__title">
+					<h3>Gửi phản hồi</h3>
+				</div>
+
+				<div class="popup-content__fields">
+					<div class="form-group">
+						<textarea class="form-control" name="content" id="msg" cols="30" rows="5"></textarea>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label" for="img-including">
+							<input type="checkbox" class="form-check-input" id="img-including">
+							<span class="checkmark"></span>
+							<span class="desc">Bao gồm hình ảnh chụp màn hình</span>
+						</label>
+					</div>
+
+					<div class="form-group">
+						<div class="image-to-send" style="display:none;">
+							<input type="image" src="" id="img-to-send">
+						</div>
+						<div class="review-image">
+							<img src="assets/fonts/fontawesome/svgs/brands/filter-img.png" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="popup-content__buttons">
+					<a class="popup-btn__cancel" k-popup-close="response" href="#"> HỦY</a>
+					<button class="btn-other__submit" type="submit">GỬI</button>
+				</div>
+
+			</div>
+		</form>
+	</div>
+</div>
 <div id="header">
 	<div id="header-left">
 		<div id="menu-toggle"><span><i class="fa fa-bars"></i></span></div>
@@ -56,10 +98,10 @@
 				<li><a href="#"><i class="fa fa-cog"></i><span>Cài đặt</span></a></li>
 				<li><a href="#"><i class="fa fa-flag"></i><span>Lịch sử báo cáo</span></a></li>
 				<li><a href="#"><i class="fa fa-question-circle"></i><span>Trợ giúp</span></a></li>
-				<li><a href="#"><i class="fa fa-comment-alt"></i><span>Gửi phản hồi</span></a></li>
+				<li><a href="#" k-popup-open="response"><i class="fa fa-comment-alt"></i><span>Gửi phản hồi</span></a></li>
 			</ul>
+
 		</div>
-		
 	</div>
 	<div id="site-container" class="container">
 		<div id="home-hot" class="row">
@@ -449,5 +491,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>
