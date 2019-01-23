@@ -251,31 +251,53 @@
 	#footer #footer-bottom .footer-copyright p {
 	    text-align: center;
 	}
+	
+	.channel-top {
+	    min-height: 200px;
+	}
 	.channel-top .my-channel-avatar {
 	    left: 30px;
 	    bottom: -35px;
 	    width: 80px;
 	    height: 80px;
 	}
+	.channel-top .my-channel-info h1 {
+	    font-size: 24px;
+	    line-height: 24px;
+	    display: block;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    width: 100%;
+	    padding: 0 5px;
+	}
 	.channel-top .my-channel-avatar img {
 	    border-radius: 50%;
 	}
 	.channel-top .my-channel-info {
-	    bottom: -32px;
+	    left: unset;
+	    position: relative;
+	    width: 100%;
+	    clear: both;
+	    bottom: unset;
+	    text-align: center;
 	}
-	.channel-top .my-channel-info .my-channel-statistic .my-statistic-item {
-	    font-size: 15px;
-	    color: #333;
+	.channel-top .my-channel-avatar {
+	    left: unset;
+	    position: relative;
+	    margin: 0 auto;
+	    bottom: unset;
+	    margin-top: 18px;
 	}
-	.channel-top .my-channel-info h1 {
-	    font-size: 24px;
-	    line-height: 24px;
+	body.channel .video-list,
+	body.channel #recently-viewed.video-list {
+	    margin-top: 20px;
 	}
-	.channel-top .my-channel-info {
-	    left: 120px;
+	.video-item {
+	    margin-bottom: 10px;
 	}
-	.channel-top {
-	    min-height: 200px;
+	.display-viewmore, .video-viewmore, .channel-viewmore {
+	    margin: 20px auto;
 	}
 }
 @media only screen and (max-width: 414px) {
@@ -296,16 +318,21 @@
 	.display-list .display-item {
 	    margin-bottom: 30px;
 	}
+	.popup-inner{
+		width: 90%;
+	}
+
 }
 @media only screen and (max-width: 375px) {
 	.top-n-video .top-video-item .top-video-item-info, .top-video-item .top-video-item-info {
 	    grid-template-columns: 2fr 6fr;
 	}
+	.channel-top .my-channel-avatar {
+	    left: 15px;
+	}
 
 }
 @media only screen and (max-width: 360px) {
-	.popup-inner{
-		width: 90%;
-	}
+	
 	
 }
