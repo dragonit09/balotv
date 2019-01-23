@@ -421,7 +421,17 @@ body.narrow #footer #footer-info{
 	color: #fb441b;
 }
 .menu-left-section ul li a span{}
-
+.menu-left-section .channels-subscriber .avatar-channel {
+    -webkit-background-size: cover;
+    background-size: cover;
+    float: left;
+    width: 25px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 25px;    
+    height: 25px;
+}
 #main #site-container,
 #main #menu-left{
 	padding-top: 90px;
