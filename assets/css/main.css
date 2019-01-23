@@ -748,6 +748,7 @@ body.narrow #footer #footer-info{
 }
 .channel-top .my-channel-info .my-channel-statistic .my-statistic-item:last-child::after{
 	content: "";
+    padding-right: 0;
 }
 .channel-top .my-channel-tools{
 	position: absolute;
