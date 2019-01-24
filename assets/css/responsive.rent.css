@@ -1,0 +1,84 @@
+@media (max-width: 1024px) {
+    body.upload-prepare .list-videos-get .item__image {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    body.upload-prepare .list-videos-get__item {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    body.upload-prepare .item__info .item-info__detail > div {
+        width: 100%;
+        display: inline-block;
+    }
+    body.upload-prepare .list-videos-get .item-info__desc {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 768px) {
+    body.upload-prepare .upload-dropzone,
+    body.upload-prepare #upload-right {
+        display: block;
+        width: 100%;
+    }
+    body.upload-prepare .row.upload-prepare__content > div {
+        flex: none;
+    }
+    body.upload-prepare .dropzone {
+        padding: 95px 0px;
+    }
+    body.upload-prepare .list-videos-get .item__image {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    body.upload-prepare .list-videos-get,
+    body.upload-prepare .upload-from-youtube .input-group {
+        margin: 0 20px;
+    }
+    body.upload-prepare .upload-from-youtube .input-group span {
+        margin-right: 40px;
+    }
+    body.upload-prepare .list-videos-get__item {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    body.upload-prepare .item__info .item-info__detail > div {
+        width: 100%;
+        display: inline-block;
+    }
+    body.upload-prepare .list-videos-get .item-info__desc {
+        margin-bottom: 10px;
+    }
+    body.upload-prepare .list-videos-get .item__image > img {
+        border-radius: 2.5px;
+    }
+    body.upload-prepare .suggest-and-support {
+        margin-top: 20px;
+    }
+    body.upload-complete button.btn-other__submit,
+    body.upload-complete button.btn-other__cancel {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    body.upload-complete button.btn-other__submit.__custom-hidden-right {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+
+    body.upload-prepare .dropzone {
+        padding: 10px 0;
+        margin-right: 0;
+    }
+    body.upload-prepare .upload-right__intro {
+        padding: 60px 0;
+    }
+    body.upload-complete button.btn-other__submit.__custom-hidden-left {
+        display: none;
+    }
+    body.upload-complete button.btn-other__submit,
+    body.upload-complete button.btn-other__cancel {
+        width: 100%;
+    }
+}

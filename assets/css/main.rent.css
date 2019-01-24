@@ -50,6 +50,7 @@ body.home .popup-response__rent .popup-content__buttons button {
     border: none;
     background-color: #fb441b;
     padding: 13px 65px;
+    cursor: pointer;
 }
 
 body.account-setting-delete .account-setting-right__intro,
@@ -82,13 +83,15 @@ body.upload-prepare .row.upload-prepare__content > div {
     flex: 1;
 }
 body.upload-prepare .dropzone {
-    border: 2px dashed #979797 !important;
+    border: 1px dashed #979797 !important;
     -webkit-border-radius: 4px !important;
     -moz-border-radius: 4px !important;
     border-radius: 4px !important;
-    padding: 81px 100px;
+    padding: 50px 50px;
     margin-bottom: 30px;
     margin-right: 30px;
+    display: flex;
+    flex-direction: column;
 }
 body.upload-prepare .dropzone .dz-message > span {
     font-size: 24px;
@@ -168,6 +171,23 @@ body.upload-prepare .suggest-and-support__content {
     line-height: 1.71;
     letter-spacing: normal;
     color: #333333;
+}
+
+body.upload-prepare .upload-from-youtube {
+    border-top: 1px solid #d8d8d8;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+body.upload-prepare .upload-from-youtube > h3 {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4a4a4a;
+    margin-bottom: 19px;
 }
 
 body.upload-prepare .suggest-and-support__content > a {
@@ -269,6 +289,7 @@ body.upload-complete button.btn-other__submit {
     text-align: center;
     color: #ffffff;
     transition: all .3s;
+    cursor: pointer;
 }
 body.upload-complete button.btn-other__cancel {
     width: 200px;
@@ -292,11 +313,17 @@ body.upload-complete button.btn-other__cancel:hover {
 body.upload-complete .option-left-second > .form-check {
     margin-bottom: 14px;
 }
+body.upload-prepare .input-group input {
+    border-radius: 0;
+    border-color: #9b9b9b;
+}
+body.upload-prepare span.input-group-text,
 body.upload-complete span.input-group-text {
     border-radius: 0 !important;
     border-color: #fb441b;
     background: #fb441b;
     cursor: pointer;
+    color: #fff;
 }
 body.upload-complete span.input-group-text > img {
     width: 20px;
@@ -310,7 +337,135 @@ body.upload-complete span.input-group-text i {
 body.upload-complete span.desc {
     margin-left: 20px;
 }
+body.upload-prepare .list-videos-get {
+    border: 1px solid #979797;
+    -webkit-border-radius: 2.5px;
+    -moz-border-radius: 2.5px;
+    border-radius: 2.5px;
+    padding: 20px;
+    height: 210px;
+    overflow-y: scroll;
+}
+body.upload-prepare .list-videos-get > .list-videos-get__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+body.upload-prepare .list-videos-get__item {
+    display: grid;
+    grid-template-columns: .6fr 1fr .4fr;
+}
+body.upload-prepare form#video-upload > div {
+    flex-direction: column;
+    justify-content: center;
+}
+body.upload-prepare .icon-first {
+    order: 1;
+}
+body.upload-prepare .upload-right__other-option {
+    order: 2;
+}
+body.upload-prepare .dz-default.dz-message {
+    order: 3;
+}
+body.upload-prepare .upload-from-youtube {
+    order: 4;
+}
+.list-videos-get {
+    order: 5;
+}
+.save-all__videos {
+    order: 6;
+}
+body.upload-prepare .item__info .item-info__detail {
+    display: flex;
+    font-size: 10px;
+    color: #333;
+}
+body.upload-prepare .item__info .item-info__detail > div:not(:last-child) {
+    margin-right: 10px;
+}
+body.upload-prepare .item__info .item-info__title {
+    font-size: 10px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.upload-prepare .item__info .item-info__desc {
+    font-size: 9px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.upload-prepare .list-videos-get .item__image {
+    width: 150px;
+}
+body.upload-prepare .list-videos-get .item__image > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+body.upload-prepare .list-videos-get .item-info__desc {
+    max-height: 1.7rem;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+}
+body.upload-prepare .list-videos-get .item__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body.upload-prepare .list-videos-get .item__button .btn-other__submit {
+    border: none;
+    background-color: #fb441b;
+    color: #fff;
+    text-transform: capitalize;
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+}
+body.upload-prepare .save-all__videos {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+body.upload-prepare .save-all__videos > button {
+    margin: auto;
+    border: none;
+    background-color: #fb441b;
+    width: 120px;
+    height: 40px;
+    color:#fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/* width */
+body.upload-prepare .list-videos-get::-webkit-scrollbar {
+    width: 5px;
+}
 
+/* Track */
+body.upload-prepare .list-videos-get::-webkit-scrollbar-track {
+    background: #b9b9b9;
+}
+
+/* Handle */
+body.upload-prepare .list-videos-get::-webkit-scrollbar-thumb {
+    background: #9b9b9b;
+    border-radius: 2.5px;
+}
+
+/* Handle on hover */
+body.upload-prepare .list-videos-get::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
 /* Hide the browser's default checkbox */
 body.upload-complete input[type=radio],
 body.home .popup-response__rent input[type=checkbox],
@@ -464,6 +619,7 @@ body.account-setting-1 button.btn-other__submit {
     text-align: center;
     color: #ffffff;
     transition: all .3s;
+    cursor: pointer;
 }
 body.account-setting-password button.btn-other__submit:hover,
 body.account-setting-1 button.btn-other__submit:hover {
@@ -484,6 +640,7 @@ body.account-setting-1 button.btn-other__cancel {
     text-align: center;
     color: #333333;
     transition: all .3s;
+    cursor: pointer;
 }
 body.account-setting-password button.btn-other__cancel:hover,
 body.account-setting-1 button.btn-other__cancel:hover {
