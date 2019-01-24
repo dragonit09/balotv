@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27e720a1-6fbd-4c16-8d9c-484c11dc4a93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/responsive.rent.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.rent.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.rent.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/responsive.rent.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/responsive.rent.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/upload.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploading.html" beforeDir="false" afterPath="$PROJECT_DIR$/uploading.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +20,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/upload.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="222">
-                  <caret line="241" column="41" lean-forward="true" selection-start-line="241" selection-start-column="41" selection-end-line="241" selection-end-column="41" />
+                <state relative-caret-position="304">
+                  <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
                   <folding>
                     <element signature="n#div#3;n#form#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -117,22 +116,22 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/css/responsive.rent.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="308">
-                  <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+                <state>
+                  <caret column="23" selection-start-column="23" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/css/main.rent.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="377">
-                  <caret line="446" column="19" selection-start-line="446" selection-start-column="19" selection-end-line="446" selection-end-column="19" />
+                <state relative-caret-position="304">
+                  <caret line="351" column="42" selection-start-line="351" selection-end-line="351" selection-end-column="42" />
                   <folding>
-                    <marker date="1548343877173" expanded="true" signature="13466:13492" ph="..." />
+                    <marker date="1548354734346" expanded="true" signature="13465:13491" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -144,8 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.wc-custom__products #wcfm-main-contentainer div.wcfm-content</find>
-      <find>.wc-custom__products #wcfm-main-contentainer #wcfm_products_listing</find>
       <find>.wcfm-collapse .wcfm-container, #wcfm-main-contentainer div.wcfm-content`</find>
       <find>.wcfm-collapse .wcfm-container</find>
       <find>#wcfm-main-contentainer .wcfm-collapse</find>
@@ -159,7 +156,6 @@
       <find>input-group</find>
       <find>input</find>
       <find>drop</find>
-      <find>body.upload-prepare .list-videos-get__item</find>
       <find>item__image</find>
       <find>list-videos-get</find>
       <find>item__info</find>
@@ -174,6 +170,9 @@
       <find>button</find>
       <find>btn-other__submit</find>
       <find>save</find>
+      <find>dialog-show-notify__item</find>
+      <find>.dialog-show-notify__item</find>
+      <find>body.upload-prepare .list-videos-get__item</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -202,9 +201,9 @@
         <option value="$PROJECT_DIR$/assets/js/main.rent.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/uploading.html" />
-        <option value="$PROJECT_DIR$/assets/css/responsive.rent.css" />
         <option value="$PROJECT_DIR$/upload.html" />
         <option value="$PROJECT_DIR$/assets/css/main.rent.css" />
+        <option value="$PROJECT_DIR$/assets/css/responsive.rent.css" />
       </list>
     </option>
   </component>
@@ -307,15 +306,16 @@
       <workItem from="1548070660581" duration="40134000" />
       <workItem from="1548221574471" duration="808000" />
       <workItem from="1548257475052" duration="11640000" />
-      <workItem from="1548329088940" duration="12232000" />
+      <workItem from="1548329088940" duration="22233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109160000" />
+    <option name="totallyTimeSpent" value="119161000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06549521" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -330,7 +330,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.21467689" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.21467689" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -474,13 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uploading.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="138" column="30" selection-start-line="131" selection-start-column="24" selection-end-line="138" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/account-setting-1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
@@ -492,31 +485,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/responsive.rent.css">
+    <entry file="file://$PROJECT_DIR$/uploading.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.rent.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="446" column="19" selection-start-line="446" selection-start-column="19" selection-end-line="446" selection-end-column="19" />
-          <folding>
-            <marker date="1548343877173" expanded="true" signature="13466:13492" ph="..." />
-          </folding>
+        <state relative-caret-position="-7">
+          <caret line="138" column="30" selection-start-line="131" selection-start-column="24" selection-end-line="138" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/upload.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="241" column="41" lean-forward="true" selection-start-line="241" selection-start-column="41" selection-end-line="241" selection-end-column="41" />
+        <state relative-caret-position="304">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
           <folding>
             <element signature="n#div#3;n#form#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.rent.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="351" column="42" selection-start-line="351" selection-end-line="351" selection-end-column="42" />
+          <folding>
+            <marker date="1548354734346" expanded="true" signature="13465:13491" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/responsive.rent.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>

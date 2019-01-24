@@ -1,3 +1,8 @@
+@media (min-width: 1367px) {
+    body.upload-prepare .list-videos-get__item {
+        grid-template-columns: .2fr 1fr .2fr;
+    }
+}
 @media (max-width: 1024px) {
     body.upload-prepare .list-videos-get .item__image {
         width: 100%;
@@ -60,13 +65,12 @@
         width: 100%;
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     body.upload-complete button.btn-other__submit.__custom-hidden-right {
         display: none;
     }
 }
 @media (max-width: 767px) {
-
     body.upload-prepare .dropzone {
         padding: 10px 0;
         margin-right: 0;
