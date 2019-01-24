@@ -141,6 +141,9 @@
 	    white-space: normal;
 	    -webkit-line-clamp: 2;
 	}
+	.channel-list .channel-list-content{
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 @media only screen and (max-width: 640px) {
 	#header-right #top-search-form input {
