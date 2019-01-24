@@ -36,6 +36,7 @@ a{
 }
 a:hover, a:focus{
 	color: #fb441b;
+    text-decoration: none;
 }
 i{
 	font-size: 20px;
@@ -217,7 +218,6 @@ body.narrow #footer #footer-info{
 #main #site-container > .row{
   margin-right: 0;
   margin-left: 0;   
-display: block;
 }
 
 #header{
@@ -702,7 +702,8 @@ display: block;
     text-transform: uppercase;
 }
 .channel-viewmore{
-  margin-top: 40px;
+  margin-top: 40px;    
+  display: inline-block;
 }
 /* CHANNEL PAGE */
 .channel-top{
@@ -806,7 +807,9 @@ body.channel #recently-viewed.video-list{
 	margin-top: 70px;
 }
 /* LIST CHANNEL */
-.channel-list{}
+.channel-list{
+    text-align: center;
+}
 .channel-list .channel-list-content{
     display: grid;
     grid-template-columns: repeat(4, 1fr);

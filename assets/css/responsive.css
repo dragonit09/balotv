@@ -154,6 +154,7 @@
 	#video-play-sidebar.full-width{
 		top: 20px;
 	}
+	
 }
 @media only screen and (max-width: 980px){
 	#popup-sign-right{
@@ -200,6 +201,9 @@
 	#video-play-sidebar .video-item > .video-item-author, 
 	#video-play-sidebar .video-item > .video-item-view-date {
 	    width: 70%;
+	}
+	.channel-list .channel-list-content {
+	    grid-template-columns: repeat(4, 1fr);
 	}
 }
 @media only screen and (max-width: 768px) {
@@ -267,6 +271,22 @@
 	    margin-left: 0;
 	    margin-right: 30px;
 	}
+	#home-hot .top-n-video {
+	    grid-template-columns: 1fr 1fr; 
+	    grid-template-rows: unset; 
+	}
+	.top-n-video .top-video-item .top-video-item-title .top-video-item-name-1 a {
+	    font-size: 18px;
+	}
+	.top-n-video .top-video-item .top-video-item-info{
+	    grid-template-columns: 2fr 6fr;
+	    width: calc(100% - 40px);
+	    height: 70px;
+	}
+	.top-n-video .top-video-item .top-video-item-title .top-video-item-name-2 {
+	    margin-top: 0px;
+	}
+}	
 	
 @media only screen and (max-width: 640px) {
 	#header-right #top-search-form input {
@@ -301,6 +321,9 @@
 		border: 1px solid #fff;
     	border-bottom: 1px solid #9b9b9b;
 	}
+	body.logged #header-right #top-search-form input{
+		right: -110px;
+	}
 	#header-right #top-search-form button[type='submit']{
 		display: none;
 	}
@@ -313,6 +336,7 @@
 	#header-right #top-search-form input.show-search{
 		top: 70px;
         visibility:visible;
+        border-top: 1px solid #f1f1f1;
 	}
 	#header-right {
 	    display: flex;
@@ -367,6 +391,9 @@
 	}
 	#header-right #top-search-form input {
 	    right: -170px;
+	}
+	body.logged #header-right #top-search-form input{
+		right: -110px;
 	}
 	#popup-sign-left {
 	    padding: 35px 25px;
@@ -457,6 +484,9 @@
 	#video-play-sidebar .video-item > a {
 	    padding-right: 10px;
 	}
+	.channel-list .channel-list-content {
+	    grid-template-columns: repeat(2, 1fr);
+	}
 }
 @media only screen and (max-width: 414px) {
 	.display-list .display-item {
@@ -485,6 +515,13 @@
 	.video-player.mini-player{
 	    width: 404px!important;
 	    height: 227px!important;
+	}
+	.channel-list .channel-item .channel-item-info {
+	    flex-direction: column;
+	}
+	.channel-list .channel-item .channel-item-info .channel-item-name .channel-follow-count,
+	.channel-list .channel-item .channel-item-info .channel-item-name .channel-name {
+	    text-align: center;
 	}
 }
 @media only screen and (max-width: 375px) {
