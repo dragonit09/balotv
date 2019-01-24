@@ -207,6 +207,7 @@ body.narrow #main #site-container{
     margin-left: auto;
     width: calc(100% - 30px - 5%);
     max-width: calc(100% - 30px - 5%);
+    padding-left: 0;
 }
 body.narrow #footer #footer-bottom,
 body.narrow #footer #footer-info{
