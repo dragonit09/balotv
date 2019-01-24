@@ -77,6 +77,30 @@ $( document ).ready(function() {
         }
         
     });
+    // Player
+    $( "#video-player-wrapper" ).on( "click", "a#expand-player", function(e) {
+            e.preventDefault();
+            if($("#video-player-wrapper").hasClass("full-width") && $("#video-play-sidebar").hasClass("full-width")){
+                $("#video-play-sidebar").removeClass("full-width");
+                $("#video-player-wrapper").removeClass("full-width");
+                $(this).removeClass("full");
+            }else{
+                $("#video-play-sidebar").addClass("full-width");
+                $("#video-player-wrapper").addClass("full-width");
+                $(this).addClass("full");
+            }
+            
+    });
+    $( "#video-player-wrapper" ).on( "click", "a#mini-player-btn", function(e) {
+            e.preventDefault();
+            if($("#video-player-wrapper .video-player").hasClass("mini-player")){
+                $("#video-player-wrapper .video-player").removeClass("mini-player");
+                $("#video-play-sidebar").removeClass("mini-player");
+            }else{
+                $("#video-player-wrapper .video-player").addClass("mini-player");
+                $("#video-play-sidebar").addClass("mini-player")
+            }  
+    });
 });
 var Validate = new function(){
     this.email = '';

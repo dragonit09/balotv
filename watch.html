@@ -84,45 +84,126 @@
 	<div id="site-container" class="container">
 		<div class="row video-play">
 			<!-- VIDEO PLAY -->
-			<div id="video-play-wrapper">
+			<div id="video-player-wrapper">
 				<div class="video-player">
-					<img src="assets/images/banner-2.jpg"/>
+					<div id="player-area"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/cnOIfm7imwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+					<a id="expand-player" class="expand-player" href="#" title="Mở rộng player"><i class="fas fa-sign-out-alt"></i></a>
+					<a id="mini-player-btn" class="mini-player-btn" href="#" title="Trình phát mini"><i class="far fa-window-restore"></i></a>
 				</div>
+			</div>
+			<div id="video-play-wrapper">
 				<h1 class="video-title mt-15">Bé Shark Khiêu vũ | Hát và nhảy! | Songs động vật | PINKFONG Songs for Children</h1>
-				<div class="video-info">
-					<div class="video-views-count">2.193.664.335 lượt xem</div>
-					<div class="video-info-right">
-						<div class="video-like video-control-item">
-							<a id="video-like-up" class="btn-play-tool video-like-btn "><i class="fas fa-thumbs-up"></i> 5 TR</a>
-							<a id="video-like-down" class="btn-play-tool video-dislike-btn "><i class="fas fa-thumbs-down"></i> 1 N</a>
+					<div class="video-info">
+						<div class="video-views-count">2.193.664.335 lượt xem</div>
+						<div class="video-info-right">
+							<div class="video-like video-control-item">
+								<a id="video-like-up" class="btn-play-tool video-like-btn "><i class="fas fa-thumbs-up"></i> 5 TR</a>
+								<a id="video-like-down" class="btn-play-tool video-dislike-btn "><i class="fas fa-thumbs-down"></i> 1 N</a>
+							</div>
+							<div class="video-download video-control-item">
+								<a class="btn-play-tool video-download-btn"><i class="fas fa-download"></i> TẢI XUỐNG</a>
+							</div>
+							<div class="video-share video-control-item">
+								<a class="btn-play-tool video-share-btn "><i class="fas fa-share-alt"></i> CHIA SẺ</a>
+							</div>
+							<div class="video-save video-control-item">
+								<a class="btn-play-tool video-save-btn "><i class="fas fa-folder-plus"></i> LƯU</a>
+							</div>
 						</div>
-						<div class="video-download video-control-item">
-							<a class="btn-play-tool video-download-btn"><i class="fas fa-download"></i> TẢI XUỐNG</a>
+					</div>
+					<div class="video-author pt-30 pb-30">
+						<div class="video-author-info">
+							<div class="video-author-avatar"><a href="#" title=""><img src="assets/images/noavatar.png" /></a></div>
+							<div class="video-author-name pl-10">
+								<div class="video-author-name-1"><a href="channel.html" title="">Charles Cruz</a></div>
+								<div class="video-author-date">Sản xuất 12 tháng 12, 2019</div>
+							</div>
+							<a class="video-follow-button"><i class="fas fa-plus"></i> Theo dõi</a>
 						</div>
-						<div class="video-share video-control-item">
-							<a class="btn-play-tool video-share-btn "><i class="fas fa-share-alt"></i> CHIA SẺ</a>
+						<div class="video-description clear mt-20">
+							<p>PINKFONG! Không. ứng dụng 1 trẻ em được lựa chọn bởi 100 triệu trẻ em trên toàn thế giới</p>
+							<p>Best Kids Songs & Câu chuyện [Miễn phí Tải về]: <a href="">http://i.sstudy.kr/L/591/des/</a></p>
 						</div>
-						<div class="video-save video-control-item">
-							<a class="btn-play-tool video-save-btn "><i class="fas fa-folder-plus"></i> LƯU</a>
+						<a class="video-description-viewmore mt-30" href="#">HIỂN THỊ THÊM</a>
+					</div>
+			</div>
+			<div id="video-play-sidebar">
+				<div class="video-autoplay-control mb-20">
+					<span class="video-autoplay-next">Tiếp theo</span>
+					<span class="video-autoplay-autonext">Tự động phát</span>
+					<span class="video-autoplay-switch">
+						<label class="switch">
+						   <input type="checkbox" checked>
+						   <span class="slider round"></span>
+						</label>
+					</span>
+				</div>
+				<div class="video-next-item pb-20">
+					<div class="video-item">
+						<a href="#"><img src="assets/images/video-img.jpg" alt="" /></a>
+						<div class="video-item-name"><a href="watch.html">Săn Và Bóc Trứng Khủng Long Lấy Đồ Chơi ❤ AnAn ...</a></div>
+						<div class="video-item-author"><a href="channel.html">AnAn ToysReview TV</a></div>
+						<div class="video-item-view-date">
+							<span class="video-item-view">1.3 Tr lượt xem</span>
+							<span class="video-item-date">1 tháng trước</span>
 						</div>
 					</div>
 				</div>
-				<div class="video-author pt-30 pb-30">
-					<div class="video-author-info">
-						<div class="video-author-avatar"><a href="#" title=""><img src="assets/images/noavatar.png" /></a></div>
-						<div class="video-author-name pl-10">
-							<div class="video-author-name-1"><a href="channel.html" title="">Charles Cruz</a></div>
-							<div class="video-author-date">Sản xuất 12 tháng 12, 2019</div>
+				<div class="video-recommend pt-10">
+					<div class="video-item">
+						<a href="#"><img src="assets/images/video-img.jpg" alt="" /></a>
+						<div class="video-item-name"><a href="#">Săn Và Bóc Trứng Khủng Long Lấy Đồ Chơi ❤ AnAn ...</a></div>
+						<div class="video-item-author"><a href="#">AnAn ToysReview TV</a></div>
+						<div class="video-item-view-date">
+							<span class="video-item-view">1.3 Tr lượt xem</span>
+							<span class="video-item-date">1 tháng trước</span>
 						</div>
-						<a class="video-follow-button"><i class="fas fa-plus"></i> Theo dõi</a>
 					</div>
-					<div class="video-description clear mt-20">
-						<p>PINKFONG! Không. ứng dụng 1 trẻ em được lựa chọn bởi 100 triệu trẻ em trên toàn thế giới</p>
-						<p>Best Kids Songs & Câu chuyện [Miễn phí Tải về]: <a href="">http://i.sstudy.kr/L/591/des/</a></p>
+					<div class="video-item">
+						<a href="#"><img src="assets/images/video-img.jpg" alt="" /></a>
+						<div class="video-item-name"><a href="#">Săn Và Bóc Trứng Khủng Long Lấy Đồ Chơi ❤ AnAn ...</a></div>
+						<div class="video-item-author"><a href="#">AnAn ToysReview TV</a></div>
+						<div class="video-item-view-date">
+							<span class="video-item-view">1.3 Tr lượt xem</span>
+							<span class="video-item-date">1 tháng trước</span>
+						</div>
 					</div>
-					<a class="video-description-viewmore mt-30" href="#">HIỂN THỊ THÊM</a>
+					<div class="video-item">
+						<a href="#"><img src="assets/images/video-img.jpg" alt="" /></a>
+						<div class="video-item-name"><a href="#">Săn Và Bóc Trứng Khủng Long Lấy Đồ Chơi ❤ AnAn ...</a></div>
+						<div class="video-item-author"><a href="#">AnAn ToysReview TV</a></div>
+						<div class="video-item-view-date">
+							<span class="video-item-view">1.3 Tr lượt xem</span>
+							<span class="video-item-date">1 tháng trước</span>
+						</div>
+					</div>
+					<div class="video-item">
+						<a href="#"><img src="assets/images/video-img.jpg" alt="" /></a>
+						<div class="video-item-name"><a href="#">Săn Và Bóc Trứng Khủng Long Lấy Đồ Chơi ❤ AnAn ...</a></div>
+						<div class="video-item-author"><a href="#">AnAn ToysReview TV</a></div>
+						<div class="video-item-view-date">
+							<span class="video-item-view">1.3 Tr lượt xem</span>
+							<span class="video-item-date">1 tháng trước</span>
+						</div>
+					</div>
+					<div class="video-item">
+						<a href="#"><img src="assets/images/video-img.jpg" alt="" /></a>
+						<div class="video-item-name"><a href="#">Săn Và Bóc Trứng Khủng Long Lấy Đồ Chơi ❤ AnAn ...</a></div>
+						<div class="video-item-author"><a href="#">AnAn ToysReview TV</a></div>
+						<div class="video-item-view-date">
+							<span class="video-item-view">1.3 Tr lượt xem</span>
+							<span class="video-item-date">1 tháng trước</span>
+						</div>
+					</div>
+					<div class="video-viewmore">
+						<a href="#" title="">Hiển thị thêm</a>
+					</div>
 				</div>
-				<div class="video-comment pt-30">
+			</div>
+			
+			<div id="video-play-comment">
+					
+					<div class="video-comment pt-30">
 					<div class="comment-post">
 						<div class="comment-count mb-20">430 Nhận xét</div>
 						<div class="comment-avatar">
@@ -261,85 +342,14 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div id="video-play-sidebar">
-				<div class="video-autoplay-control mb-20">
-					<span class="video-autoplay-next">Tiếp theo</span>
-					<span class="video-autoplay-autonext">Tự động phát</span>
-					<span class="video-autoplay-switch">
-						<label class="switch">
-						   <input type="checkbox" checked>
-						   <span class="slider round"></span>
-						</label>
-					</span>
 				</div>
-				<div class="video-next-item pb-20">
-					<div class="video-item">
-						<a href="#"><img src="assets/images/video-img.jpg" alt="" /></a>
-						<div class="video-item-name"><a href="watch.html">Săn Và Bóc Trứng Khủng Long Lấy Đồ Chơi ❤ AnAn ...</a></div>
-						<div class="video-item-author"><a href="channel.html">AnAn ToysReview TV</a></div>
-						<div class="video-item-view-date">
-							<span class="video-item-view">1.3 Tr lượt xem</span>
-							<span class="video-item-date">1 tháng trước</span>
-						</div>
-					</div>
-				</div>
-				<div class="video-recommend pt-10">
-					<div class="video-item">
-						<a href="#"><img src="assets/images/video-img.jpg" alt="" /></a>
-						<div class="video-item-name"><a href="#">Săn Và Bóc Trứng Khủng Long Lấy Đồ Chơi ❤ AnAn ...</a></div>
-						<div class="video-item-author"><a href="#">AnAn ToysReview TV</a></div>
-						<div class="video-item-view-date">
-							<span class="video-item-view">1.3 Tr lượt xem</span>
-							<span class="video-item-date">1 tháng trước</span>
-						</div>
-					</div>
-					<div class="video-item">
-						<a href="#"><img src="assets/images/video-img.jpg" alt="" /></a>
-						<div class="video-item-name"><a href="#">Săn Và Bóc Trứng Khủng Long Lấy Đồ Chơi ❤ AnAn ...</a></div>
-						<div class="video-item-author"><a href="#">AnAn ToysReview TV</a></div>
-						<div class="video-item-view-date">
-							<span class="video-item-view">1.3 Tr lượt xem</span>
-							<span class="video-item-date">1 tháng trước</span>
-						</div>
-					</div>
-					<div class="video-item">
-						<a href="#"><img src="assets/images/video-img.jpg" alt="" /></a>
-						<div class="video-item-name"><a href="#">Săn Và Bóc Trứng Khủng Long Lấy Đồ Chơi ❤ AnAn ...</a></div>
-						<div class="video-item-author"><a href="#">AnAn ToysReview TV</a></div>
-						<div class="video-item-view-date">
-							<span class="video-item-view">1.3 Tr lượt xem</span>
-							<span class="video-item-date">1 tháng trước</span>
-						</div>
-					</div>
-					<div class="video-item">
-						<a href="#"><img src="assets/images/video-img.jpg" alt="" /></a>
-						<div class="video-item-name"><a href="#">Săn Và Bóc Trứng Khủng Long Lấy Đồ Chơi ❤ AnAn ...</a></div>
-						<div class="video-item-author"><a href="#">AnAn ToysReview TV</a></div>
-						<div class="video-item-view-date">
-							<span class="video-item-view">1.3 Tr lượt xem</span>
-							<span class="video-item-date">1 tháng trước</span>
-						</div>
-					</div>
-					<div class="video-item">
-						<a href="#"><img src="assets/images/video-img.jpg" alt="" /></a>
-						<div class="video-item-name"><a href="#">Săn Và Bóc Trứng Khủng Long Lấy Đồ Chơi ❤ AnAn ...</a></div>
-						<div class="video-item-author"><a href="#">AnAn ToysReview TV</a></div>
-						<div class="video-item-view-date">
-							<span class="video-item-view">1.3 Tr lượt xem</span>
-							<span class="video-item-date">1 tháng trước</span>
-						</div>
-					</div>
-					<div class="video-viewmore">
-						<a href="#" title="">Hiển thị thêm</a>
-					</div>
-				</div>
-			</div>
+			
+			
 		</div>
 	</div>
 
 </div>
-<div id="footer">
+<!-- <div id="footer">
 	<div id="footer-info" class="row">
 		<div id="footer-logo" class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
 			<img src="assets/images/logo-big.png" alt="col-xl-" />
@@ -365,7 +375,7 @@
 			</ul>
 		</div>
 	</div>
-</div>
+</div> -->
 <!-- POPUP -->
 <div class="popup" k-popup="login">
     <div class="popup-inner">
