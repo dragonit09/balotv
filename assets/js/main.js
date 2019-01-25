@@ -89,16 +89,40 @@ $( document ).ready(function() {
                 $("#video-player-wrapper").addClass("full-width");
                 $(this).addClass("full");
             }
-            
     });
     $( "#video-player-wrapper" ).on( "click", "a#mini-player-btn", function(e) {
             e.preventDefault();
             if($("#video-player-wrapper .video-player").hasClass("mini-player")){
                 $("#video-player-wrapper .video-player").removeClass("mini-player");
                 $("#video-play-sidebar").removeClass("mini-player");
+                $("#expand-player").css({"display":"block"});
             }else{
                 $("#video-player-wrapper .video-player").addClass("mini-player");
-                $("#video-play-sidebar").addClass("mini-player")
+                $("#video-play-sidebar").addClass("mini-player");
+                $("#expand-player").css({"display":"none"});
+            }  
+    });
+    $( "#video-player-wrapper" ).on( "click", "a#mini-player-btn", function(e) {
+            e.preventDefault();
+            if($("#video-player-wrapper .video-player").hasClass("mini-player")){
+                $("#video-player-wrapper .video-player").removeClass("mini-player");
+                $("#video-play-sidebar").removeClass("mini-player");
+                $("#expand-player").css({"display":"block"});
+            }else{
+                $("#video-player-wrapper .video-player").addClass("mini-player");
+                $("#video-play-sidebar").addClass("mini-player");
+                $("#expand-player").css({"display":"none"});
+            }  
+    });
+
+    $( "#video-play-wrapper" ).on( "click", "a#viewmore-detail-video", function(e) {
+            e.preventDefault();
+            if($("#video-desc").hasClass("more")){
+                $("#video-desc").removeClass("more");
+                $(this).text('HIỂN THỊ THÊM');
+            }else{
+                $("#video-desc").addClass("more");
+                $(this).text('THU GỌN');
             }  
     });
 });

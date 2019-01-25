@@ -9,14 +9,15 @@
 	    height: 706px;
 	}
 	#video-play-sidebar{
-		top: -706px;
-		position: relative;
+		top: 90px;
+	    position: absolute;
+	    right: 20px;
 	}
 	#video-player-wrapper.full-width{
 		width: 100%;
 	}
 	#video-play-sidebar.full-width{
-		top: 20px;
+		top: 706px;
 	}
 	.channel-list .channel-list-content{
 		grid-template-columns: repeat(6, 1fr);
@@ -40,30 +41,23 @@
 	#video-player-wrapper .video-player{
 	    height: 526px;
 	}
-	#video-play-sidebar{
-		top: -526px;
-		position: relative;
-	}
 	#video-player-wrapper.full-width{
 		width: 100%;
 	}
 	#video-play-sidebar.full-width{
-		top: 20px;
+		top: 636px;
 	}
 }
 @media only screen and (max-width: 1366px) {
 	#video-player-wrapper .video-player{
 	    height: 499px;
 	}
-	#video-play-sidebar{
-		top: -499px;
-		position: relative;
-	}
+	
 	#video-player-wrapper.full-width{
 		width: 100%;
 	}
 	#video-play-sidebar.full-width{
-		top: 20px;
+		top: 609px;
 	}
 }
 @media only screen and (max-width: 1280px) {
@@ -95,15 +89,12 @@
 	#video-player-wrapper .video-player{
 	    height: 467px;
 	}
-	#video-play-sidebar{
-		top: -467px;
-		position: relative;
-	}
+	
 	#video-player-wrapper.full-width{
 		width: 100%;
 	}
 	#video-play-sidebar.full-width{
-		top: 20px;
+		top: 577px;
 	}
 }
 @media only screen and (max-width: 1024px) {
@@ -144,15 +135,12 @@
 	#video-player-wrapper .video-player{
 	    height: 371px;
 	}
-	#video-play-sidebar{
-		top: -371px;
-		position: relative;
-	}
+	
 	#video-player-wrapper.full-width{
 		width: 100%;
 	}
 	#video-play-sidebar.full-width{
-		top: 20px;
+		top: 481px;
 	}
 	
 }
@@ -193,6 +181,7 @@
 	#video-play-sidebar{
 		margin-top: 30px;
     	padding-left: 0;
+    	right: unset;
 	}
 	#video-play-sidebar .video-item > a {
 	    width: 30%;
@@ -486,6 +475,13 @@
 	}
 	.channel-list .channel-list-content {
 	    grid-template-columns: repeat(2, 1fr);
+	}
+	.top-n-video .top-video-item .top-video-item-info .top-video-item-title{
+		display: none;
+	}
+	.top-n-video .top-video-item .top-video-item-info {
+	    grid-template-columns: 1fr;
+    	width: 70px;
 	}
 }
 @media only screen and (max-width: 414px) {
