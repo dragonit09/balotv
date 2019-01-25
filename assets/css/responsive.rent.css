@@ -2,6 +2,9 @@
     body.upload-prepare .list-videos-get__item {
         grid-template-columns: .2fr 1fr .2fr;
     }
+    #user-notifcation .dialog-show__notifications {
+        width: 400px !important;
+    }
 }
 @media (max-width: 1024px) {
     body.upload-prepare .list-videos-get .item__image {
@@ -21,6 +24,10 @@
     }
 }
 @media (max-width: 768px) {
+    #user-notifcation .dialog-show__notifications {
+        /*display: none !important;*/
+        /*width: 100vw !important;*/
+    }
     body.upload-prepare .upload-dropzone,
     body.upload-prepare #upload-right {
         display: block;

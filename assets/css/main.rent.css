@@ -447,22 +447,26 @@ body.upload-prepare .save-all__videos > button {
     cursor: pointer;
 }
 /* width */
+.dialog-show__notifications::-webkit-scrollbar,
 body.upload-prepare .list-videos-get::-webkit-scrollbar {
     width: 5px;
 }
 
 /* Track */
+.dialog-show__notifications::-webkit-scrollbar-track,
 body.upload-prepare .list-videos-get::-webkit-scrollbar-track {
     background: #b9b9b9;
 }
 
 /* Handle */
+.dialog-show__notifications::-webkit-scrollbar-thumb,
 body.upload-prepare .list-videos-get::-webkit-scrollbar-thumb {
     background: #9b9b9b;
     border-radius: 2.5px;
 }
 
 /* Handle on hover */
+.dialog-show__notifications::-webkit-scrollbar-thumb:hover,
 body.upload-prepare .list-videos-get::-webkit-scrollbar-thumb:hover {
     background: transparent;
 }
@@ -712,12 +716,29 @@ body.account-setting-delete a.btn-other__delete:hover {
 
 
 /* DIALOG CUSTOm */
+.d-none {
+    display: none;
+}
+.d-block {
+    display: block;
+}
+#user-place,
 #user-notifcation,
 #menu-category {
     position: relative;
 }
+#user-place .dialog-show__user {
+    position: absolute;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    margin-top: -10px;
+    min-width: 130px;
+    margin-left: calc(50% - 100px);
+}
 #menu-category .dialog-show__categories {
-    display: none;
     position: absolute;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -728,7 +749,6 @@ body.account-setting-delete a.btn-other__delete:hover {
     min-width: 200px;
 }
 #user-notifcation .dialog-show__notifications {
-    display: none;
     position: absolute;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -736,36 +756,47 @@ body.account-setting-delete a.btn-other__delete:hover {
     background: #fff;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     margin-top: -10px;
-    min-width: 468px;
+    min-width: 320px;
+    max-width: 100vw;
     max-height: calc(100vh - 100px);
     margin-left: calc(50% - 234px);
     overflow-y: scroll;
 }
+a > .dialog-show-user__item {
+    color: #333333;
+}
+.dialog-show-user__item,
 .dialog-show-category__item {
     line-height: 50px;
     border-bottom: 1px solid #eee;
     padding: 0 18px;
     transition: all .2s;
 }
+.dialog-show-user__item:hover,
 .dialog-show-category__item:hover {
     background: #eef1f2;
     cursor: pointer;
 }
-.dialog-show__categories > a:hover {
-    text-decoration: none !important;
-}
+/*.dialog-show__categories > a:hover {*/
+    /*text-decoration: none !important;*/
+/*}*/
+a > .dialog-show-user__item:hover,
 a > .dialog-show-category__item:hover {
     text-decoration: none;
     color: #333333;
 }
-#user-notifcation:hover .dialog-show__notifications,
-#menu-category:hover .dialog-show__categories {
-    display: block;
-}
+/*#user-notifcation:hover .dialog-show__notifications,*/
+/*#menu-category:hover .dialog-show__categories {*/
+    /*display: block;*/
+/*}*/
 .dialog-show-notify__item {
     display: flex;
     padding: 10px 10px;
     line-height: 22px;
+    transition: all .3s;
+}
+a > .dialog-show-notify__item:hover {
+    background-color: #eef1f2;
 }
 .dialog-show__notifications .header {
     background: #e0e0e0;
@@ -774,6 +805,7 @@ a > .dialog-show-category__item:hover {
     text-transform: capitalize;
     font-weight: bold;
     margin-left: 10px;
+    line-height: 65px;
 }
 .dialog-show__notifications .header .right {
     position: absolute;
@@ -791,6 +823,10 @@ a > .dialog-show-category__item:hover {
 }
 .dialog-show-notify__item .notify-desc {
     margin-right: 10px;
+}
+.dialog-show-notify__item .notify-desc > .date {
+    font-size: 14px;
+    color: #9b9b9b;
 }
 .dialog-show-notify__item .notify-preview-image-video {
     width: 120px;
