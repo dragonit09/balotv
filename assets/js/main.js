@@ -102,19 +102,7 @@ $( document ).ready(function() {
                 $("#expand-player").css({"display":"none"});
             }  
     });
-    $( "#video-player-wrapper" ).on( "click", "a#mini-player-btn", function(e) {
-            e.preventDefault();
-            if($("#video-player-wrapper .video-player").hasClass("mini-player")){
-                $("#video-player-wrapper .video-player").removeClass("mini-player");
-                $("#video-play-sidebar").removeClass("mini-player");
-                $("#expand-player").css({"display":"block"});
-            }else{
-                $("#video-player-wrapper .video-player").addClass("mini-player");
-                $("#video-play-sidebar").addClass("mini-player");
-                $("#expand-player").css({"display":"none"});
-            }  
-    });
-
+    
     $( "#video-play-wrapper" ).on( "click", "a#viewmore-detail-video", function(e) {
             e.preventDefault();
             if($("#video-desc").hasClass("more")){
@@ -124,6 +112,16 @@ $( document ).ready(function() {
                 $("#video-desc").addClass("more");
                 $(this).text('THU GỌN');
             }  
+    });
+    $( "body" ).on( "click", ".video-like .btn-play-tool.guest, #main-overlay", function(e) {
+            e.preventDefault();
+            if($("#video-like-tooltips-guest").is(":visible")){
+                $("#main-overlay").remove();
+                $("#video-like-tooltips-guest").toggle(300);
+            }else{
+                $("#video-like-tooltips-guest").toggle(300);
+                $("body").append('<div id="main-overlay" style="background: rgba(0, 0, 0, 0); position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 9999;"></div>');
+            }
     });
 });
 var Validate = new function(){

@@ -17,7 +17,7 @@
 		width: 100%;
 	}
 	#video-play-sidebar.full-width{
-		top: 706px;
+		top: 816px;
 	}
 	.channel-list .channel-list-content{
 		grid-template-columns: repeat(6, 1fr);

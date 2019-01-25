@@ -12,6 +12,7 @@ body{
 	color: #333333;
 	line-height: 24px;
 	font-weight: 400;
+    position: relative;
 }
 h1, h2, h3, h4, h5, h6 {
     line-height: 24px;
@@ -863,6 +864,7 @@ body.channel #recently-viewed.video-list{
 .display-list .display-item .display-item-image{}
 .display-list .display-item .display-item-info{
   position: relative;
+  padding-right: 20px;
 }
 .display-list .display-item .display-item-info .display-name{}
 .display-list .display-item .display-item-info .display-name a{
@@ -903,7 +905,11 @@ body.channel #recently-viewed.video-list{
 .display-tools{
     position: absolute;
     top: 0;
-    right: -40px;
+    right: 0;
+    display: none;
+}
+.display-item:hover .display-tools{
+    display: block;
 }
 .display-tools .tool-three-dot{
 
@@ -1342,7 +1348,9 @@ body.watch #site-container{
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);*/
 }
-#video-play-wrapper .video-info .video-info-right .video-like{}
+#video-play-wrapper .video-info .video-info-right .video-like{
+    position: relative;
+}
 #video-play-wrapper .video-info .video-info-right .video-download{}
 #video-play-wrapper .video-info .video-info-right .video-share{}
 #video-play-wrapper .video-info .video-info-right .video-save{}
@@ -1706,4 +1714,35 @@ input:checked + .slider:before {
   color: #fff;
   background: #fb441b;
   border: 1px solid #fb441b;
+}
+
+/* TOOLTIPS */
+.tooltips-wrapper{
+    display: none;
+    position: absolute;
+    width: 280px;
+    top: 40px;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+.tooltips-title {
+    font-size: 16px;
+    padding: 5px 20px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+.tooltips-desc {
+    padding: 5px 20px;
+    font-size: 14px;
+}
+.tooltips-footer {
+    padding: 10px 20px;
+    border-top: 1px solid #dfdfdf;
+    margin-top: 10px;
+}
+.tooltips-footer a{
+    margin-left: 0!important;
+    font-weight: 600;
 }
