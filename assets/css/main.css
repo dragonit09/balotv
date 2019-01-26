@@ -361,7 +361,8 @@ body.narrow #footer #footer-info{
   z-index: 2;
  
 }
-#main #menu-left:hover{
+#main #menu-left:hover,
+#main #menu-left:focus{
    overflow-y: auto;
 }
 #main #menu-left::-webkit-scrollbar {
@@ -923,6 +924,7 @@ body.channel #recently-viewed.video-list{
   top: 30px;
     right: 0;
   position: absolute;
+  z-index: 1;
 }
 .display-tools .list-tools li{
   font-size: 13px;

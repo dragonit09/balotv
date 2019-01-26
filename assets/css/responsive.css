@@ -208,6 +208,9 @@
 	.channel-list .channel-list-content {
 	    grid-template-columns: repeat(4, 1fr);
 	}
+	.expand-player{
+		display: none;
+	}
 }
 @media only screen and (max-width: 768px) {
 	#header-right #top-search-form input {
@@ -288,6 +291,9 @@
 	}
 	.top-n-video .top-video-item .top-video-item-title .top-video-item-name-2 {
 	    margin-top: 0px;
+	}
+	body.upload-prepare .dropzone{
+		margin-right: 0;
 	}
 }	
 	
@@ -535,8 +541,12 @@
 	}
 }
 @media only screen and (max-width: 375px) {
-	.top-n-video .top-video-item .top-video-item-info, .top-video-item .top-video-item-info {
+
+	.top-video-item .top-video-item-info {
 	    grid-template-columns: 2fr 6fr;
+	}
+	.top-n-video .top-video-item .top-video-item-info{
+		display: none;
 	}
 	.video-player.mini-player{
 	    width: 375px!important;
