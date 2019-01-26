@@ -8,16 +8,19 @@
     #video-player-wrapper .video-player{
 	    height: 706px;
 	}
+	#video-player-wrapper.full-width .video-player {
+	    height: 806px;
+	}
 	#video-play-sidebar{
 		top: 90px;
 	    position: absolute;
-	    right: 20px;
+	    right: 60px;
 	}
 	#video-player-wrapper.full-width{
 		width: 100%;
 	}
 	#video-play-sidebar.full-width{
-		top: 816px;
+		top: 926px;
 	}
 	.channel-list .channel-list-content{
 		grid-template-columns: repeat(6, 1fr);
@@ -41,23 +44,29 @@
 	#video-player-wrapper .video-player{
 	    height: 526px;
 	}
+	#video-player-wrapper.full-width .video-player{
+	    height: 626px;
+	}
 	#video-player-wrapper.full-width{
 		width: 100%;
 	}
 	#video-play-sidebar.full-width{
-		top: 636px;
+		top: 746px;
 	}
 }
 @media only screen and (max-width: 1366px) {
 	#video-player-wrapper .video-player{
 	    height: 499px;
 	}
+	#video-player-wrapper.full-width .video-player{
+	    height: 599px;
+	}
 	
 	#video-player-wrapper.full-width{
 		width: 100%;
 	}
 	#video-play-sidebar.full-width{
-		top: 609px;
+		top: 719px;
 	}
 }
 @media only screen and (max-width: 1280px) {
@@ -89,12 +98,14 @@
 	#video-player-wrapper .video-player{
 	    height: 467px;
 	}
-	
+	#video-player-wrapper.full-width .video-player{
+	    height: 567px;
+	}
 	#video-player-wrapper.full-width{
 		width: 100%;
 	}
 	#video-play-sidebar.full-width{
-		top: 577px;
+		top: 687px;
 	}
 }
 @media only screen and (max-width: 1024px) {
@@ -135,12 +146,15 @@
 	#video-player-wrapper .video-player{
 	    height: 371px;
 	}
+	#video-player-wrapper.full-width .video-player{
+	    height: 471px;
+	}
 	
 	#video-player-wrapper.full-width{
 		width: 100%;
 	}
 	#video-play-sidebar.full-width{
-		top: 481px;
+		top: 591px;
 	}
 	
 }

@@ -3,6 +3,7 @@
 <title>Video Play</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.css">
 <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
 <link rel="stylesheet" href="assets/bootstrap-4.2.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/css/main.css">
@@ -10,7 +11,9 @@
 <link rel="stylesheet" href="assets/css/responsive.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="assets/bootstrap-4.2.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.js"></script>
 <script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="assets/js/main.rent.js"></script>
 <body class="watch logged narrow menu-over">
 
 <div id="header">
@@ -31,8 +34,30 @@
 			<a href="#" title="Đăng nhập" k-popup-open="login"><i class="fa fa-user"></i> <span>ĐĂNG NHẬP</span></a>
 		</div>
 		<div id="menu-category">
-			<a id="category-toggle" href="#" title="Đăng nhập"><i class="fa fa-grip-horizontal"></i> <span>Danh Mục</span></a>
-		</div>
+            <a id="category-toggle" href="#" title="Danh mục"><i class="fa fa-grip-horizontal"></i> <span>Danh Mục</span></a>
+            <div class="dialog-show__categories d-none">
+                <a href="">
+                    <div class="dialog-show-category__item">
+                        Thể thao
+                    </div>
+                </a>
+                <a href="">
+                    <div class="dialog-show-category__item">
+                        Gaming
+                    </div>
+                </a>
+                <a href="">
+                    <div class="dialog-show-category__item">
+                        Bơi lội
+                    </div>
+                </a>
+                <a href="">
+                    <div class="dialog-show-category__item">
+                        Đá bóng
+                    </div>
+                </a>
+            </div>
+        </div>
 	</div>
 	
 </div>
