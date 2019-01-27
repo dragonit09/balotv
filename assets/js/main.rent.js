@@ -20,9 +20,10 @@ $(document).ready(function () {
         __this.removeClass('d-none');
         document.body.addEventListener('click', __closeBoxCategories, false);
     });
-
+    // && ! $(e.target).parents('').length
     function __closeBoxNotify(e){
-        if(e.target.id != 'user-notifcation'){
+        // console.log ($(e.target).parents());
+        if(e.target.id != 'user-notifcation' &&  ! $(e.target).parents('div#notification-box').length ){
             document.body.removeEventListener('click', __closeBoxNotify, false);
             $('.dialog-show__notifications').addClass('d-none');
         }
