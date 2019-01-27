@@ -3,6 +3,7 @@ $(document).ready(function () {
         dictDefaultMessage: "Kéo và thả tệp tin",
     });
 
+    
     var __isOpenNotify = false;
     $("body").on('click', '#user-notifcation', function () {
         __isOpenNotify = !__isOpenNotify;

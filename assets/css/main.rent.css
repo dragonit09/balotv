@@ -737,6 +737,7 @@ body.account-setting-delete a.btn-other__delete:hover {
     margin-top: -10px;
     min-width: 130px;
     margin-left: calc(50% - 100px);
+    z-index: 99999;
 }
 #menu-category .dialog-show__categories {
     position: absolute;
@@ -748,6 +749,8 @@ body.account-setting-delete a.btn-other__delete:hover {
     margin-top: -10px;
     min-width: 200px;
     right: 0;
+    z-index: 99999;
+    display: none;
 }
 #user-notifcation .dialog-show__notifications {
     position: absolute;
@@ -762,6 +765,7 @@ body.account-setting-delete a.btn-other__delete:hover {
     max-height: calc(100vh - 100px);
     margin-left: calc(50% - 234px);
     overflow-y: scroll;
+    z-index: 99999;
 }
 a > .dialog-show-user__item {
     color: #333333;
