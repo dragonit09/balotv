@@ -17,18 +17,18 @@ $(document).ready(function () {
         }
     });
 
-    var __isOpenCategory = false;
-    $("body").on('click', '#menu-category', function () {
-        __isOpenCategory = !__isOpenCategory;
-        var __this = $('.dialog-show__categories');
-        if (__isOpenCategory) {
-            __this.fadeIn(300);
-            __this.removeClass('d-none').addClass('d-block');
-        } else {
-            __this.fadeOut(300);
-            __this.removeClass('d-block').addClass('d-none');
-        }
-    });
+    // var __isOpenCategory = false;
+    // $("body").on('click', '#menu-category', function () {
+    //     __isOpenCategory = !__isOpenCategory;
+    //     var __this = $('.dialog-show__categories');
+    //     if (__isOpenCategory) {
+    //         __this.fadeIn(300);
+    //         __this.removeClass('d-none').addClass('d-block');
+    //     } else {
+    //         __this.fadeOut(300);
+    //         __this.removeClass('d-block').addClass('d-none');
+    //     }
+    // });
 
     var __isOpenUserOption = false;
     $("body").on('click', '#user-place', function () {
