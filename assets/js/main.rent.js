@@ -9,7 +9,7 @@ $(document).ready(function () {
         document.body.addEventListener('click', __closeBoxNotify, false);
     });
 
-<<<<<<< HEAD
+
     // var __isOpenCategory = false;
     // $("body").on('click', '#menu-category', function () {
     //     __isOpenCategory = !__isOpenCategory;
@@ -22,13 +22,12 @@ $(document).ready(function () {
     //         __this.removeClass('d-block').addClass('d-none');
     //     }
     // });
-=======
+
     $('body').on('click', '#user-place', function () {
         var __this = $('.dialog-show__user');
         __this.removeClass('d-none');
         document.body.addEventListener('click', __closeBoxUser, false);
     });
->>>>>>> 9475df3eb11608d9d524e796f2b9fef78ab8989b
 
     $('body').on('click', '#menu-category', function () {
         var __this = $('.dialog-show__categories');
