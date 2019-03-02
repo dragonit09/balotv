@@ -236,7 +236,7 @@
 	#user-place a span{
 		display: none;
 	}
-	#home-hot {
+	#home-hot .home-hot-content {
 	    grid-template-columns: 1fr;
 	}
 	.top-n-video .top-video-item .top-video-item-info,
@@ -309,6 +309,12 @@
 	}
 	body.upload-prepare .dropzone{
 		margin-right: 0;
+	}
+	.subheader h2{
+		width: 100%;
+	}
+	.subheader .subscribe-button {
+	    float: left;
 	}
 }	
 @media only screen and (max-width: 767px) {

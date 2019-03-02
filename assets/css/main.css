@@ -219,6 +219,8 @@ body.narrow #footer #footer-info{
 #main #site-container > .row{
   margin-right: 0;
   margin-left: 0;   
+  z-index: 1;
+  position: relative;
 }
 
 #header{
