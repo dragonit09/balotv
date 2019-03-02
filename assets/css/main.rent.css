@@ -82,7 +82,7 @@ body.upload-prepare .row.upload-prepare__content {
 body.upload-prepare .row.upload-prepare__content > div {
     flex: 1;
 }
-body.upload-prepare .dropzone {
+body.upload-prepare .dropzone-upload {
     border: 1px dashed #979797 !important;
     -webkit-border-radius: 4px !important;
     -moz-border-radius: 4px !important;
@@ -93,7 +93,7 @@ body.upload-prepare .dropzone {
     display: flex;
     flex-direction: column;
 }
-body.upload-prepare .dropzone .dz-message > span {
+body.upload-prepare .dropzone-upload .dz-message > span {
     font-size: 24px;
     font-weight: normal;
     font-style: normal;
@@ -103,19 +103,19 @@ body.upload-prepare .dropzone .dz-message > span {
     text-align: center;
     color: #4a4a4a;
 }
-body.upload-prepare .dropzone .upload-right__other-option {
+body.upload-prepare .dropzone-upload .upload-right__other-option {
     position: relative;
     text-align: center;
     margin-top: 30px;
 }
-body.upload-prepare .dropzone .upload-right__other-option input[type="text"] {
+body.upload-prepare .dropzone-upload .upload-right__other-option input[type="text"] {
     border-radius: 0 !important;
 }
-body.upload-prepare .dropzone .icon-first {
+body.upload-prepare .dropzone-upload .icon-first {
     position: relative;
     text-align: center;
 }
-body.upload-prepare .dropzone .icon-first > i {
+body.upload-prepare .dropzone-upload .icon-first > i {
     font-size: 100px;
 }
 body.upload-prepare select[name="status"] {
@@ -174,13 +174,11 @@ body.upload-prepare .suggest-and-support__content {
 }
 
 body.upload-prepare .upload-from-youtube {
-    border-top: 1px solid #d8d8d8;
-    margin-top: 20px;
-    padding-top: 20px;
+
 }
 body.upload-prepare .upload-from-youtube > h3 {
-    font-size: 16px;
-    font-weight: normal;
+    font-size: 18px;
+    font-weight: 600;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
@@ -188,6 +186,7 @@ body.upload-prepare .upload-from-youtube > h3 {
     text-align: center;
     color: #4a4a4a;
     margin-bottom: 19px;
+    text-transform: uppercase;
 }
 
 body.upload-prepare .suggest-and-support__content > a {
@@ -750,6 +749,9 @@ body.account-setting-delete a.btn-other__delete:hover {
     min-width: 200px;
     right: 0;
     z-index: 99999;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
 }
 #user-notifcation .dialog-show__notifications {
     position: absolute;
@@ -771,7 +773,7 @@ a > .dialog-show-user__item {
 }
 .dialog-show-user__item,
 .dialog-show-category__item {
-    line-height: 50px;
+    line-height: 45px;
     border-bottom: 1px solid #eee;
     padding: 0 18px;
     transition: all .2s;
@@ -780,6 +782,12 @@ a > .dialog-show-user__item {
 .dialog-show-category__item:hover {
     background: #eef1f2;
     cursor: pointer;
+}
+#menu-category .dialog-show__categories a:last-child .dialog-show-category__item{
+    border-bottom: unset;
+}
+.dialog-show-category__item span{
+    margin-left: 10px;
 }
 /*.dialog-show__categories > a:hover {*/
     /*text-decoration: none !important;*/

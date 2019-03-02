@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/main.rent.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/player/media-element-js/build/mediaelementplayer.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="assets/bootstrap-4.2.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.js"></script>
@@ -25,8 +26,9 @@
 	<div id="header-right">
 		<div id="search">
 			<form id="top-search-form">
-				<input type="text" placeholder="Tìm kiếm...">
 				<button type="submit"><i class="fa fa-search"></i></button>
+				<input name="q" type="text" placeholder="Tìm kiếm...">
+				
 				<button type="button" id="mobile-search-btn"><i class="fa fa-search"></i></button>
 			</form>
 		</div>
@@ -111,7 +113,11 @@
 			<!-- VIDEO PLAY -->
 			<div id="video-player-wrapper">
 				<div class="video-player">
-					<div id="player-area"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/cnOIfm7imwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+					<div id="player-area">
+						<video id="player1" poster="http://www.mediaelementjs.com/images/big_buck_bunny.jpg"  controls playsinline webkit-playsinline >
+		                 
+		                </video>
+					</div>
 					<a id="expand-player" class="expand-player" href="#" title="Mở rộng player"><i class="fas fa-sign-out-alt"></i></a>
 					<a id="mini-player-btn" class="mini-player-btn" href="#" title="Trình phát mini"><i class="far fa-window-restore"></i></a>
 				</div>
@@ -481,5 +487,17 @@
         </div>
     </div>
 </div>
+    <script src="assets/player/media-element-js/build/mediaelement-and-player.js"></script>
+    <script src="assets/player/media-element-js/build/renderers/dailymotion.js"></script>
+    <script src="assets/player/media-element-js/build/renderers/facebook.js"></script>
+    <script src="assets/player/media-element-js/build/renderers/soundcloud.js"></script>
+    <script src="assets/player/media-element-js/build/renderers/twitch.js"></script>
+    <script src="assets/player/media-element-js/build/renderers/vimeo.js"></script>
+    <script src="assets/player/media-element-js/src/mediaplayer.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    	BaloTV.callPlayer('player1', 'https://www.youtube.com/watch?v=VESfwbJViqU', true);
+    });
+	</script>
 </body>
 </html>
