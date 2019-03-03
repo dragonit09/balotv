@@ -799,12 +799,14 @@ body.home #main #site-container > .row{
     left: 50px;
     bottom: -35px;    
     width: 200px;
-    height: 200px;
+    height: 200px;    
+    overflow: hidden;
 }
 .channel-top .my-channel-avatar img{
 	border-radius: 5px;
 	object-fit: cover;
-    border-radius: 50%;
+    border-radius: 50%;    
+    height: 100%;
 }
 .channel-top .my-channel-info{
 	position: absolute;
