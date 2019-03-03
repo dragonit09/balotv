@@ -80,7 +80,7 @@ body.upload-prepare .row.upload-prepare__content {
 }
 
 body.upload-prepare .row.upload-prepare__content > div {
-    flex: 1;
+   
 }
 body.upload-prepare .dropzone-upload {
     border: 1px dashed #979797 !important;
@@ -342,15 +342,14 @@ body.upload-prepare .list-videos-get {
     -moz-border-radius: 2.5px;
     border-radius: 2.5px;
     padding: 20px;
-    height: 210px;
-    overflow-y: scroll;
 }
 body.upload-prepare .list-videos-get > .list-videos-get__item:not(:last-child) {
     margin-bottom: 20px;
 }
 body.upload-prepare .list-videos-get__item {
     display: grid;
-    grid-template-columns: .33fr 1fr .2fr;
+    grid-template-columns: .33fr 1fr .2fr;    
+    grid-gap: 20px;
 }
 body.upload-prepare form#video-upload > div {
     flex-direction: column;
@@ -401,7 +400,7 @@ body.upload-prepare .item__info .item-info__desc {
     color: #333333;
 }
 body.upload-prepare .list-videos-get .item__image {
-    width: 85px;
+    
 }
 body.upload-prepare .list-videos-get .item__image > img {
     object-fit: cover;
