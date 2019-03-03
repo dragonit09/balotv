@@ -1,4 +1,32 @@
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1921px) {
+	#header-right #top-search-form input{
+	    width: 700px;
+	}
+    #site-container{
+        min-height: 1080px;
+    }
+    #video-player-wrapper .video-player{
+	    height: 706px;
+	}
+	#video-player-wrapper.full-width .video-player {
+	    height: 806px;
+	}
+	#video-play-sidebar{
+		top: 90px;
+	    position: absolute;
+	    right: 60px;
+	}
+	#video-player-wrapper.full-width{
+		width: 100%;
+	}
+	#video-play-sidebar.full-width{
+		top: 926px;
+	}
+	.channel-list .channel-list-content{
+		grid-template-columns: repeat(6, 1fr);
+	}
+}
+@media only screen and (max-width: 1920px) {
 	#header-right #top-search-form input{
 	    width: 700px;
 	}
