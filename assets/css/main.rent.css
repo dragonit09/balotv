@@ -80,7 +80,7 @@ body.upload-prepare .row.upload-prepare__content {
 }
 
 body.upload-prepare .row.upload-prepare__content > div {
-   
+   width: 100%;
 }
 body.upload-prepare .dropzone-upload {
     border: 1px dashed #979797 !important;
@@ -89,7 +89,6 @@ body.upload-prepare .dropzone-upload {
     border-radius: 4px !important;
     padding: 50px 50px;
     margin-bottom: 30px;
-    margin-right: 30px;
     display: flex;
     flex-direction: column;
 }
