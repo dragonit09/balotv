@@ -21,7 +21,7 @@ h1{
 
 }
 h3{
-	font-size: 32px;
+	font-size: 25px;
 }
 h4{
 	font-size: 16px;
@@ -711,7 +711,7 @@ body.home #main #site-container > .row{
 .display-viewmore,
 .video-viewmore,
 .channel-viewmore{
-    background-color: #fb441b;
+    background-color: #dfdfdf;
     padding: 13px 54px;
     margin: 0 auto;
     cursor: pointer;
@@ -719,14 +719,19 @@ body.home #main #site-container > .row{
 .display-viewmore:hover,
 .video-viewmore:hover,
 .channel-viewmore:hover{
-	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+	background-color: #fb441b;
 }
 .display-viewmore a,
 .video-viewmore a,
 .channel-viewmore a{
-    color: #fff;
+    color: #333;
     font-weight: 600;
     text-transform: uppercase;
+}
+.display-viewmore:hover a,
+.video-viewmore:hover a,
+.channel-viewmore:hover a{
+    color: #fff;
 }
 .channel-viewmore{
   margin-top: 40px;    
