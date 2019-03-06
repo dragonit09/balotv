@@ -344,6 +344,9 @@
 	.subheader .subscribe-button {
 	    float: left;
 	}
+	#footer #footer-info{
+	    display: none;
+	}
 }	
 @media only screen and (max-width: 767px) {
   .notfound .notfound-404 {

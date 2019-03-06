@@ -80,6 +80,20 @@ $( document ).ready(function() {
         }
         
     });
+    $( ".video-item" ).on( "click", "a#show-tool-list", function(e) {
+        e.preventDefault();
+        if($(this).next().is(":visible")){
+            $(this).next().slideToggle(); 
+        }else{
+           $(".video-item #list-tools:visible").toggle();
+           $(this).next().slideToggle(); 
+        }
+        
+    });
+    // $("#display-list, .video-item").mouseout(function(e){
+    //     e.preventDefault();
+    //     $(this).find("#list-tools").css({"display":"none"});
+    //   });
     // Player
     $( "#video-player-wrapper" ).on( "click", "a#expand-player", function(e) {
             e.preventDefault();
