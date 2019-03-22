@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.js"></script>
 <!--End-->
-<body class="upload-complete narrow menu-over">
+<body class="upload-complete narrow menu-over dark">
 
 <div id="header">
     <div id="header-left">
@@ -27,12 +27,12 @@
     <div id="header-right">
         <div id="search">
             <form id="top-search-form">
-                <input type="text" placeholder="Tìm kiếm...">
                 <button type="submit"><i class="fa fa-search"></i></button>
+                <input name="q" type="text" placeholder="Tìm kiếm...">
+                
                 <button type="button" id="mobile-search-btn"><i class="fa fa-search"></i></button>
             </form>
         </div>
-
         <div id="user-place">
             <a href="#" title="User" class="user-avatar"><img src="assets/images/noavatar.png" /></a>
         </div>
@@ -141,7 +141,7 @@
                         <div class="form-check">
                             <label class="form-check-label" for="allowed-link">
                                 <input type="checkbox" class="form-check-input" id="allowed-link">
-                                <span class="chueckmark"></span>
+                                <span class="checkmark"></span>
                                 <span class="desc">Cho phép nhúng vào website khác</span>
                             </label>
                         </div>

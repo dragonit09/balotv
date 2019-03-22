@@ -1,4 +1,55 @@
 $( document ).ready(function() {
+    function callMode(){
+        if (typeof(Storage) !== "undefined") {
+            var theme_mode = window.localStorage.getItem("theme_mode");
+            if( typeof(theme_mode) == "undefined"){
+                window.localStorage.setItem("theme_mode", "light");
+                theme_mode = window.localStorage.getItem("theme_mode");
+            }
+            if(theme_mode == "light"){
+                $("#menu-mode span").removeClass("active");
+                var old_mode = 'dark';
+            }else{
+                $("#menu-mode span").addClass("active");
+                var old_mode = 'light';
+            }
+            $("body").removeClass(old_mode).addClass(theme_mode);
+        }else{
+            $("#menu-mode").remove();
+        }
+    }
+    callMode();
+    if (typeof(Storage) !== "undefined") {
+        
+
+        $( "body" ).on( "click", "#menu-mode span", function(e) {
+            e.preventDefault();
+
+            var theme_mode = window.localStorage.getItem("theme_mode");
+            if( typeof(theme_mode) == "undefined"){
+                window.localStorage.setItem("theme_mode", "dark");
+                var theme_mode = window.localStorage.getItem("theme_mode");
+                $("body").removeClass("light").addClass("dark");
+                $(this).addClass("active");
+            }else{
+                if(theme_mode == "light"){
+                    $(this).addClass("active");
+                    localStorage.setItem("theme_mode", "dark");
+                    $("body").removeClass("light").addClass("dark");
+                }else{
+                    $(this).removeClass("active");
+                    localStorage.setItem("theme_mode", "light");
+                    $("body").removeClass("dark").addClass("light");
+                }
+            }
+            
+            
+        });
+    }
+    
+
+    
+
     if(screen.width <= 1280) $("body").addClass("menu-over narrow");
     $(window).on('resize', function(){
         if(screen.width <= 1280) $("body").addClass("menu-over narrow");

@@ -264,6 +264,9 @@
 	#user-place a span{
 		display: none;
 	}
+	#menu-category a .dialog-show-category__item span{
+		display: inline-block;
+	}
 	#home-hot .home-hot-content {
 	    grid-template-columns: 1fr;
 	}
