@@ -1,0 +1,924 @@
+body.home .review-image {
+    background: #979797;
+    padding: 100px;
+}
+body.home .review-image > img {
+    width: 70px;
+    height: 70px;
+}
+body.home .popup-response__rent .popup-content__title {
+    background-color: #fb441b;
+    padding: 13px;
+    margin-bottom: 20px;
+}
+body.home .popup-response__rent .popup-content__title > h3 {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+body.home .popup-response__rent .popup-content__fields {
+    margin: 0 20px;
+}
+body.home .popup-response__rent .popup-content__fields .form-check {
+    text-align: left;
+    clear: both;
+    margin-bottom: 20px;
+}
+body.home .popup-response__rent span.desc {margin-left: 25px;}
+body.home .popup-response__rent .popup-content__buttons {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+body.home .popup-response__rent .popup-content__buttons a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+    text-decoration: underline;
+    margin-right: 40px;
+}
+body.home .popup-response__rent .popup-content__buttons button {
+    border: none;
+    background-color: #fb441b;
+    padding: 13px 65px;
+    cursor: pointer;
+}
+
+body.account-setting-delete .account-setting-right__intro,
+body.account-setting-password .account-setting-right__intro,
+body.account-setting-1 .account-setting-right__intro,
+body.upload-prepare .upload-right__intro {
+    background: #fb441b;
+    padding: 80px;
+    text-align: center;
+}
+body.account-setting-delete .account-setting-right__intro > img,
+body.account-setting-password .account-setting-right__intro > img,
+body.account-setting-1 .account-setting-right__intro > img,
+body.upload-prepare .upload-right__intro > img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+body.account-setting-delete .account-setting-right__intro > .title,
+body.account-setting-password .account-setting-right__intro > .title,
+body.account-setting-1 .account-setting-right__intro > .title,
+body.upload-prepare .upload-right__intro > .title {
+    color: #ffffff;
+    font-size: 14px;
+}
+body.upload-prepare .row.upload-prepare__content {
+    display: flex;
+}
+
+body.upload-prepare .row.upload-prepare__content > div {
+   width: 100%;
+}
+body.upload-prepare .dropzone-upload {
+    border: 1px dashed #979797 !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+    padding: 50px 50px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+body.upload-prepare.dark .dropzone-upload{
+    background: #121212;
+}
+body.upload-prepare .dropzone-upload .dz-message > span {
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4a4a4a;
+}
+body.upload-prepare .dropzone-upload .upload-right__other-option {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+}
+body.upload-prepare .dropzone-upload .upload-right__other-option input[type="text"] {
+    border-radius: 0 !important;
+}
+body.upload-prepare .dropzone-upload .icon-first {
+    position: relative;
+    text-align: center;
+}
+body.upload-prepare .dropzone-upload .icon-first > i {
+    font-size: 100px;
+}
+body.upload-prepare select[name="status"] {
+    width: 205.8px;
+    height: 40px;
+    margin-top: 19px;
+}
+body.upload-prepare .upload-right__updload-other .title {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.upload-prepare .buttons {
+    display: flex;
+}
+body.upload-prepare .buttons > .upload-other {
+    width: 50%;
+    background: #eef1f2;
+    text-align: center;
+    padding: 10px 0;
+}
+body.upload-prepare .buttons > .upload-other > a {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.upload-prepare h1.suggest-and-support__title {
+    /* font-size: 24px; */
+    margin-bottom: 18px;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.upload-prepare .suggest-and-support__content {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.upload-prepare.dark .suggest-and-support__content ,
+body.upload-prepare.dark h1.suggest-and-support__title{
+    color: #fff;
+}
+body.upload-prepare .upload-from-youtube {
+
+}
+body.upload-prepare .upload-from-youtube > h3 {
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4a4a4a;
+    margin-bottom: 19px;
+    text-transform: uppercase;
+}
+body.upload-prepare.dark .upload-from-youtube > h3{
+    color: #fff;
+}
+body.upload-prepare .suggest-and-support__content > a {
+    color: #4a90e2;
+}
+body.upload-complete ul.channels-subscriber > li,
+body.upload-prepare ul.channels-subscriber > li {
+    display: flex;
+}
+body.upload-complete .channels-subscriber .avatar-channel,
+body.upload-prepare .channels-subscriber .avatar-channel {
+    -webkit-background-size: cover;
+    background-size: cover;
+    float: left;
+    width: 25px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+body.upload-complete span.avatar-channel.fa.fa-angle-down,
+body.upload-prepare span.avatar-channel.fa.fa-angle-down {
+    margin-top: 5px;
+    margin-left: 7px;
+    margin-right: 18px;
+}
+body.upload-complete #menu-left,
+body.upload-prepare #menu-left {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+body.upload-complete .image-video-preview {
+    margin-bottom: 20px;
+}
+body.upload-complete .image-video-preview img {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+body.upload-complete .option-left__title {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.upload-complete .option-left__description {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.upload-complete .option-left-first {
+    border-bottom: 1px solid #9b9b9b;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+body.upload-complete .form-group > label {
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.upload-complete .form-group select > option {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.upload-complete.dark .option-left__description,
+body.upload-complete.dark .option-left__title,
+body.upload-complete.dark .form-group select > option,
+body.upload-complete.dark .form-group > label{
+    color: #fff;
+}
+body.upload-complete input,
+body.upload-complete textarea,
+body.upload-complete select {
+    border-radius: 0 !important;
+    border-color: #979797;
+}
+body.upload-complete.dark input,
+body.upload-complete.dark textarea,
+body.upload-complete.dark select {
+    border-radius: 0 !important;
+    border-color: #979797;
+    background: #121212;
+}
+body.upload-complete button.btn-other__submit {
+    border: none;
+    background: #fb441b;
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    transition: all .3s;
+    cursor: pointer;
+}
+body.upload-complete button.btn-other__cancel {
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid #fb441b;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    transition: all .3s;
+}
+body.upload-complete.dark button.btn-other__cancel{
+    color: #fff;
+}
+body.upload-complete button.btn-other__submit:hover,
+body.upload-complete button.btn-other__cancel:hover {
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+body.upload-complete .option-left-second > .form-check {
+    margin-bottom: 14px;
+}
+body.upload-prepare .input-group input {
+    border-radius: 0;
+    border-color: #9b9b9b;
+}
+body.upload-prepare.dark .input-group input{
+    background: #121212;
+}
+body.upload-prepare span.input-group-text,
+body.upload-complete span.input-group-text {
+    border-radius: 0 !important;
+    border-color: #fb441b;
+    background: #fb441b;
+    cursor: pointer;
+    color: #fff;
+}
+body.upload-complete span.input-group-text > img {
+    width: 20px;
+    margin: 0 6px;
+}
+body.upload-complete span.input-group-text i {
+    color: #ffffff;
+    font-size: 13px;
+    transform: rotate(45deg);
+}
+body.upload-complete span.desc {
+    margin-left: 20px;
+}
+body.upload-prepare .list-videos-get {
+    border: 1px solid #979797;
+    -webkit-border-radius: 2.5px;
+    -moz-border-radius: 2.5px;
+    border-radius: 2.5px;
+    padding: 20px;
+}
+body.upload-prepare .list-videos-get > .list-videos-get__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+body.upload-prepare .list-videos-get__item {
+    display: grid;
+    grid-template-columns: .33fr 1fr .2fr;    
+    grid-gap: 20px;
+}
+body.upload-prepare form#video-upload > div {
+    flex-direction: column;
+    justify-content: center;
+}
+body.upload-prepare .icon-first {
+    order: 1;
+}
+body.upload-prepare .upload-right__other-option {
+    order: 2;
+}
+body.upload-prepare .dz-default.dz-message {
+    order: 3;
+}
+body.upload-prepare .upload-from-youtube {
+    order: 4;
+}
+.list-videos-get {
+    order: 5;
+}
+.save-all__videos {
+    order: 6;
+}
+body.upload-prepare .item__info .item-info__detail {
+    display: flex;
+    font-size: 8px;
+    color: #333;
+}
+body.upload-prepare.dark .item__info .item-info__detail{
+    color: #fff;
+}
+body.upload-prepare .item__info .item-info__detail > div:not(:last-child) {
+    margin-right: 10px;
+}
+body.upload-prepare .item__info .item-info__title {
+    font-size: 10px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.upload-prepare .item__info .item-info__desc {
+    font-size: 9px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.upload-prepare.dark .item__info .item-info__desc,
+body.upload-prepare.dark .item__info .item-info__title{
+    color: #fff;
+}
+body.upload-prepare .list-videos-get .item__image {
+    
+}
+body.upload-prepare .list-videos-get .item__image > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+body.upload-prepare .list-videos-get .item-info__desc {
+    max-height: 1.7rem;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+}
+body.upload-prepare .list-videos-get .item__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body.upload-prepare .list-videos-get .item__button .btn-other__submit {
+    border: none;
+    background-color: #fb441b;
+    color: #fff;
+    text-transform: capitalize;
+    width: 55px;
+    height: 30px;
+    cursor: pointer;
+}
+body.upload-prepare .save-all__videos {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+body.upload-prepare .save-all__videos > button {
+    margin: auto;
+    border: none;
+    background-color: #fb441b;
+    width: 120px;
+    height: 40px;
+    color:#fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/* width */
+.dialog-show__notifications::-webkit-scrollbar,
+body.upload-prepare .list-videos-get::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.dialog-show__notifications::-webkit-scrollbar-track,
+body.upload-prepare .list-videos-get::-webkit-scrollbar-track {
+    background: #b9b9b9;
+}
+
+/* Handle */
+.dialog-show__notifications::-webkit-scrollbar-thumb,
+body.upload-prepare .list-videos-get::-webkit-scrollbar-thumb {
+    background: #9b9b9b;
+    border-radius: 2.5px;
+}
+
+/* Handle on hover */
+.dialog-show__notifications::-webkit-scrollbar-thumb:hover,
+body.upload-prepare .list-videos-get::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+/* Hide the browser's default checkbox */
+body.upload-complete input[type=radio],
+body.home .popup-response__rent input[type=checkbox],
+body.upload-complete input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+body.home .popup-response__rent .checkmark,
+body.upload-complete .checkmark {
+    position: absolute;
+    top: -3px !important;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(216, 216, 216, 0) !important;
+    border-radius: 4px;
+    border: 1px solid #b9b9b9;
+}
+body.upload-complete .indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(216, 216, 216, 0);
+    border-radius: 50%;
+    border: 1px solid #b9b9b9;
+}
+/* Custom */
+body.upload-complete label > span.indicator {
+    top: 13px !important;
+}
+/* On mouse-over, add a grey background color */
+body.upload-complete input[type=radio] ~ .indicator,
+body.home .popup-response__rent input[type=checkbox] ~ .checkmark,
+body.upload-complete input[type=checkbox] ~ .checkmark {
+    background: #f9f9f9;
+}
+body.upload-complete input[type=radio]:hover ~ .indicator,
+body.home .popup-response__rent input[type=checkbox]:hover ~ .checkmark,
+body.upload-complete input[type=checkbox]:hover ~ .checkmark {
+    background: #b9b9b9;
+}
+/* When the checkbox/indicator is checked, add a color background */
+body.upload-complete input[type=radio]:checked ~ .indicator,
+body.upload-complete input[type=checkbox]:checked ~ .checkmark,
+body.home .popup-response__rent input[type=checkbox]:checked ~ .checkmark {
+    background-color: #f9f9f9;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+body.upload-complete .indicator:after,
+body.home .popup-response__rent .checkmark:after,
+body.upload-complete .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+body.upload-complete input[type=radio]:checked ~ .indicator:after,
+body.home .popup-response__rent input[type=checkbox]:checked ~ .checkmark:after,
+body.upload-complete input[type=checkbox]:checked ~ .checkmark:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+body.home .popup-response__rent .checkmark:after,
+body.upload-complete .checkmark:after {
+    left: 11px;
+    top: 5px;
+    width: 8px;
+    height: 15px;
+    border: solid #fb441b;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+body.upload-complete .indicator:after {
+    top: 5px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #f9a01b;
+}
+
+/* CSS FOR ACCOUNT SETTING 1 */
+.menu-vertical .menu-vertical__item {
+    margin-bottom: 10px;
+}
+.menu-vertical .menu-vertical__item > a {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+    transition: all .3s;
+}
+body.dark .menu-vertical .menu-vertical__item > a{
+    color: #fff;
+}
+.menu-vertical .menu-vertical__item > a:hover {
+    text-decoration: none;
+    color: #fb441b;
+}
+
+.menu-vertical .menu-vertical__item > a.active {
+    color: #fb441b;
+}
+
+body.account-setting-password .form-accout-setting-password label,
+body.account-setting-1 .form-accout-setting label {
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+}
+body.account-setting-password.dark .form-accout-setting-password label,
+body.account-setting-1.dark .form-accout-setting label,
+body.dark .menu-vertical .menu-vertical__item > a:hover,
+body.dark .menu-vertical .menu-vertical__item > a.active
+{
+    color: #fff;
+}
+body.account-setting-password .form-accout-setting-password .form-group,
+body.account-setting-1 .form-accout-setting .form-group {
+    margin-bottom: 20px;
+}
+body.account-setting-password .form-accout-setting-password input,
+body.account-setting-1 .form-accout-setting input {
+    height: 40px !important;
+    border-radius: 2px;
+    background-color: rgba(216, 216, 216, 0);
+    border-color: #979797 !important;
+}
+body.account-setting-1 .form-accout-setting textarea {
+    border-radius: 2px;
+    background-color: rgba(216, 216, 216, 0);
+    border-color: #979797 !important;
+}
+body.account-setting-password button.btn-other__submit,
+body.account-setting-1 button.btn-other__submit {
+    margin-right: 20px;
+    border: none;
+    background: #fb441b;
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    transition: all .3s;
+    cursor: pointer;
+}
+body.account-setting-password button.btn-other__submit:hover,
+body.account-setting-1 button.btn-other__submit:hover {
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+body.account-setting-password button.btn-other__cancel,
+body.account-setting-1 button.btn-other__cancel {
+    height: 40px;
+    width: 120px;
+    background: transparent;
+    border: 1px solid #fb441b;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    transition: all .3s;
+    cursor: pointer;
+}
+body.account-setting-password.dark button.btn-other__cancel,
+body.account-setting-1.dark button.btn-other__cancel{
+    color: #fff;
+}
+body.account-setting-password button.btn-other__cancel:hover,
+body.account-setting-1 button.btn-other__cancel:hover {
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+/* END */
+
+body.account-setting-password .form-accout-setting-password .type_temp {
+    position: relative;
+}
+body.account-setting-password .form-accout-setting-password span.overlay_rent {
+    position: absolute;
+    float: right;
+    right: 20px;
+    top: 7px;
+    text-decoration: underline;
+    font-size: 10px;
+    color: #fb441b;
+    cursor: pointer;
+}
+body.account-setting-delete .account-setting-delete__mid > .desc-1 {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+    margin-bottom: 10px;
+}
+body.account-setting-delete .account-setting-delete__mid > .desc-2 {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+    margin-bottom: 10px;
+}
+body.account-setting-delete .account-setting-delete__mid > .desc-3 {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333333;
+    margin-bottom: 45px;
+}
+body.account-setting-delete .account-setting-delete__mid > .desc-1,
+body.account-setting-delete .account-setting-delete__mid > .desc-2,
+body.account-setting-delete .account-setting-delete__mid > .desc-3{
+    color: #fff;
+}
+body.account-setting-delete a.btn-other__delete {
+    border: none;
+    background: #fb441b;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    transition: all .3s;
+    padding: 12px 40px;
+    text-decoration: none;
+}
+body.account-setting-delete a.btn-other__delete:hover {
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* DIALOG CUSTOm */
+.d-none {
+    display: none;
+}
+.d-block {
+    display: block;
+}
+#user-place,
+#user-notifcation,
+#menu-category {
+    position: relative;
+}
+#user-place .dialog-show__user {
+    position: absolute;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    margin-top: -10px;
+    min-width: 130px;
+    margin-left: calc(50% - 100px);
+    z-index: 99999;
+}
+#menu-category .dialog-show__categories {
+    position: absolute;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    margin-top: -10px;
+    min-width: 200px;
+    right: 0;
+    z-index: 99999;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+}
+body.dark #menu-category .dialog-show__categories{
+    background: #272727;
+}
+#user-notifcation .dialog-show__notifications {
+    position: absolute;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    margin-top: -10px;
+    min-width: 320px;
+    max-width: 100vw;
+    max-height: calc(100vh - 100px);
+    margin-left: calc(50% - 234px);
+    overflow-y: scroll;
+    z-index: 99999;
+}
+body.dark #user-notifcation .dialog-show__notifications{
+    background: #272727;
+}
+a > .dialog-show-user__item {
+    color: #333333;
+}
+.dialog-show-user__item,
+.dialog-show-category__item {
+    line-height: 45px;
+    border-bottom: 1px solid #eee;
+    padding: 0 18px;
+    transition: all .2s;
+}
+body.dark .dialog-show-user__item,
+body.dark .dialog-show-category__item{
+    border-bottom: 1px solid #141414;
+}
+.dialog-show-user__item:hover,
+.dialog-show-category__item:hover {
+    background: #eef1f2;
+    cursor: pointer;
+}
+body.dark .dialog-show-user__item:hover,
+body.dark .dialog-show-category__item:hover {
+    background: #121212;
+}
+#menu-category .dialog-show__categories a:last-child .dialog-show-category__item{
+    border-bottom: unset;
+}
+.dialog-show-category__item span{
+    margin-left: 10px;
+}
+/*.dialog-show__categories > a:hover {*/
+    /*text-decoration: none !important;*/
+/*}*/
+a > .dialog-show-user__item:hover,
+a > .dialog-show-category__item:hover {
+    text-decoration: none;
+    color: #333333;
+}
+body.dark a > .dialog-show-user__item:hover,
+body.dark a > .dialog-show-category__item:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+/*#user-notifcation:hover .dialog-show__notifications,*/
+/*#menu-category:hover .dialog-show__categories {*/
+    /*display: block;*/
+/*}*/
+.dialog-show-notify__item {
+    display: flex;
+    padding: 10px 10px;
+    line-height: 22px;
+    transition: all .3s;
+}
+a > .dialog-show-notify__item:hover {
+    background-color: #eef1f2;
+}
+.dialog-show__notifications .header {
+    background: #e0e0e0;
+}
+body.dark .dialog-show__notifications .header{
+    background: #333;
+}
+.dialog-show__notifications .header .left {
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-left: 10px;
+    line-height: 65px;
+}
+.dialog-show__notifications .header .right {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.dialog-show-notify__item .notify-avatar {
+    width: 45px;
+    margin-right: 10px;
+}
+.dialog-show-notify__item .notify-avatar > img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.dialog-show-notify__item .notify-desc {
+    margin-right: 10px;
+}
+.dialog-show-notify__item .notify-desc > .date {
+    font-size: 14px;
+    color: #9b9b9b;
+}
+.dialog-show-notify__item .notify-preview-image-video {
+    width: 120px;
+    height: auto;
+}
+.dialog-show-notify__item .notify-preview-image-video > img {
+    object-fit: cover;
+}
