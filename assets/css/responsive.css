@@ -181,6 +181,9 @@
 	#menu-category a span{
 		display: none;
 	}
+	#menu-category .dialog-show-category__item span{
+		display: inline-block;
+	}
 	#display-list #pagination,
 	.viewmore,
 	.display-list .display-list-content {
@@ -397,8 +400,8 @@
 	    position: absolute;
 	    right: -227px;
 	    width: 100vw;
-		-webkit-transition: top .5s ease-in-out; /* Safari */
-		transition: top .5s ease-in-out;
+		-webkit-transition: top .2s ease-in-out; /* Safari */
+		transition: top .2s ease-in-out;
 		border: 1px solid #fff;
     	border-bottom: 1px solid #9b9b9b;
 	}

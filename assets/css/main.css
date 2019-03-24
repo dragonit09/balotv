@@ -1517,6 +1517,10 @@ body.watch #site-container{
 #video-play-wrapper{
 	width: 70%;
 	float: left;
+  z-index: 1;
+}
+#video-play-comment{
+  z-index: 0;
 }
 #video-player-wrapper .video-player{
     width: 100%;
@@ -1667,7 +1671,7 @@ body.watch #site-container{
     line-height: 55px;
     cursor: pointer;
 }
-.expand-player{
+.player-more-icon-2{
     top: 70px;
 }
 .mini-player-btn i,
@@ -1686,9 +1690,9 @@ body.watch #site-container{
     transform: rotate(180deg);
 }
 .video-player{
-    -webkit-transition: all .3s linear; /* Safari */
-    -ms-transition: all .3s linear;
-    transition: all .3s linear;
+    -webkit-transition: all .1s linear; /* Safari */
+    -ms-transition: all .1s linear;
+    transition: all .1s linear;
 }
 .video-player.mini-player{
     position: fixed;

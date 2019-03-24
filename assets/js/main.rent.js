@@ -1,7 +1,10 @@
 $(document).ready(function () {
-    $("form.dropzone").dropzone({
-        dictDefaultMessage: "Kéo và thả tệp tin",
-    });
+    if($("form.dropzone").length > 0){
+       $("form.dropzone").dropzone({
+            dictDefaultMessage: "Kéo và thả tệp tin",
+        }); 
+    }
+    
 
     $('body').on('click', '#user-notifcation', function () {
         var __this = $('.dialog-show__notifications');
