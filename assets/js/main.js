@@ -46,17 +46,28 @@ $( document ).ready(function() {
             
         });
     }
-    
-
-    /* fix watch.html */
-    if($("#video-play-sidebar").length > 0 && screen.width > 980){
-        var commentHeight = document.getElementById("video-play-sidebar").offsetHeight;
-        var wrapperHeight = document.getElementById("video-play-wrapper").offsetHeight;
-        var playerHeight = document.getElementById("video-player-wrapper").offsetHeight;
-        var heightCalc = commentHeight - playerHeight - wrapperHeight + 30;
-        $("#video-play-comment").css({"min-height": heightCalc+"px"});
+    fix_sidebar_height();
+    function fix_sidebar_height(){
+        /* fix watch.html */
+        if($("#video-play-sidebar").length > 0 && screen.width > 980){
+            var commentHeight = document.getElementById("video-play-sidebar").offsetHeight;
+            var wrapperHeight = document.getElementById("video-play-wrapper").offsetHeight;
+            var playerHeight = document.getElementById("video-player-wrapper").offsetHeight;
+            var heightCalc = commentHeight - playerHeight - wrapperHeight + 30;
+            $("#video-play-comment").css({"min-height": heightCalc+"px"});
+        }
     }
-
+    $( "body" ).on( "change", "#video-play-sidebar", function(e) {
+            e.preventDefault();
+            fix_sidebar_height();
+    });
+    $( "body" ).on( "click", "#video-play-sidebar .video-viewmore", function(e) {
+        e.preventDefault();
+        var video_item = '<div class="video-item"> <a href="#"><img src="assets/images/video-img.jpg" alt=""></a><div class="video-item-name"><a href="#">Săn Và Bóc Trứng Khủng Long Lấy Đồ Chơi ❤ AnAn ...</a></div><div class="video-item-author"><a href="#">AnAn ToysReview TV</a></div> <div class="video-item-view-date"><span class="video-item-view">1.3 Tr lượt xem</span> <span class="video-item-date">1 tháng trước</span></div></div>';
+        $(video_item).insertBefore("#video-play-sidebar .video-recommend .video-viewmore");
+        fix_sidebar_height();
+    });
+     
     if(screen.width <= 1280) $("body").addClass("menu-over narrow");
     $(window).on('resize', function(){
         if(screen.width <= 1280) $("body").addClass("menu-over narrow");
