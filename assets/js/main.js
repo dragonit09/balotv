@@ -194,6 +194,7 @@ $( document ).ready(function() {
                 $("#video-play-sidebar").addClass("mini-player");
                 $("#expand-player").css({"display":"none"});
             }  
+            fix_sidebar_height();
     });
     
     $( "#video-play-wrapper" ).on( "click", "a#viewmore-detail-video", function(e) {
