@@ -50,10 +50,16 @@ $( document ).ready(function() {
     function fix_sidebar_height(){
         /* fix watch.html */
         if($("#video-play-sidebar").length > 0 && screen.width > 980){
+            var commentoffsetTop = document.getElementById("video-play-sidebar").offsetTop;
             var commentHeight = document.getElementById("video-play-sidebar").offsetHeight;
+            
+            console.log(commentoffsetTop);
             var wrapperHeight = document.getElementById("video-play-wrapper").offsetHeight;
             var playerHeight = document.getElementById("video-player-wrapper").offsetHeight;
-            var heightCalc = commentHeight - playerHeight - wrapperHeight + 30;
+            
+            var heightCalc = commentHeight - playerHeight - wrapperHeight + commentoffsetTop + 30;
+            
+            
             $("#video-play-comment").css({"min-height": heightCalc+"px"});
         }
     }
@@ -175,6 +181,7 @@ $( document ).ready(function() {
                 $("#video-player-wrapper").addClass("full-width");
                 $(this).addClass("full");
             }
+            fix_sidebar_height();
     });
     $( "#video-player-wrapper" ).on( "click", "a#mini-player-btn", function(e) {
             e.preventDefault();
