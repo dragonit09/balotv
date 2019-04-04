@@ -82,15 +82,27 @@ $( document ).ready(function() {
       var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
       return regex.test(email);
     }
-    if(screen.width <= 640){
+    if(screen.width <= 686){
         $( "#header-right" ).on( "click", "#search #mobile-search-btn", function(e) {
             //console.log(e.which);
             e.preventDefault();
             if($("#header-right #top-search-form input").hasClass("show-search")){
                 $("#header-right #top-search-form input").removeClass("show-search");
+                $("#search-overlay").remove();
+                $("#header").css({"z-index":"3"});
             }else{
                 $("#header-right #top-search-form input").addClass("show-search");
+                $("body").append('<div id="search-overlay" style="width: 100%; height: 100%; top: 0; left: 0; display: block; z-index: 999999; position: absolute; background: rgba(0, 0, 0, 0.8)"></div>');
+                $("#header").css({"z-index":"999999999"});
             }
+            
+        });
+        $( "body" ).on( "click", "#search-overlay", function(e) {
+            //console.log(e.which);
+            e.preventDefault();
+            $("#header-right #top-search-form input").removeClass("show-search");
+            $("#search-overlay").remove();
+            $("#header").css({"z-index":"3"});
             
         });
     }

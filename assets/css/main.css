@@ -358,8 +358,11 @@ body.dark #header-left #menu-toggle span i{
 	font-size: 14px;
 }
 #header-right #upload-video .btn i{
-	color: #fff;    
+	color: #333;    
 	padding-right: 10px;
+}
+body.dark #header-right #upload-video .btn i{
+  color: #fff;
 }
 #header-right #user-notifcation #user-notifcation-bell i{
     position: relative;
