@@ -63,6 +63,7 @@ $( document ).ready(function() {
             $("#video-play-comment").css({"min-height": heightCalc+"px"});
         }
     }
+
     $( "body" ).on( "change", "#video-play-sidebar", function(e) {
             e.preventDefault();
             fix_sidebar_height();

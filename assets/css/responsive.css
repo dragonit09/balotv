@@ -273,6 +273,9 @@
 	    top: 30px;
 	    right: 30px;
 	}
+	#main #menu-left, #main #menu-left {
+	    overflow-y: auto;
+	}
 }
 @media only screen and (max-width: 836px) {
 	#header-right #top-search-form input {
@@ -369,13 +372,27 @@
 		margin-right: 0;
 	}
 	.subheader h2{
-		width: 100%;
+		
 	}
 	.subheader .subscribe-button {
 	    float: left;
 	}
 	#footer #footer-info{
 	    display: none;
+	}
+	.subheader h2 .subheader-title{
+		position: relative;
+    	top: -8px;
+	}
+	.subheader h2 .subheader-desc{
+	    bottom: -9px;
+	    display: block;
+	    left: 40px;
+	    position: absolute;
+	}
+	.subheader {
+	    display: flex;
+	    justify-content: space-between;
 	}
 }	
 @media only screen and (max-width: 767px) {
@@ -558,6 +575,12 @@
 	    font-size: 13px;
 	    padding: 6px 24px;
 	}
+	.subheader h2 .subheader-title {
+	    font-size: 14px;
+	}
+	.subheader h2 .subheader-desc{
+		font-size: 12px;
+	}
 }
 @media only screen and (max-width: 480px) {
 	.video-list .video-list-content {
@@ -677,6 +700,22 @@
 	.notfound h2 {
 	    font-size: 18px;
 	}
+	.subscribe-button-button{
+		    width: 19px;
+    height: 19px;
+	}
+	.subscribe-button-button::before {
+	    top: 9px;
+	    left: 5px;
+	    width: 10px;
+	    height: 2px;
+	}
+	.subscribe-button-button::after {
+	    top: 9px;
+	    left: 5px;
+	    width: 10px;
+	    height: 2px;
+	}
 }
 @media only screen and (max-width: 414px) {
 	.display-list .display-item {
@@ -726,6 +765,9 @@
 	    width: 375px!important;
 	    height: 211px!important;
 	}
+	.text{
+		font-size: 12px;
+	}
 }
 @media only screen and (max-width: 360px) {
 	#video-play-wrapper .video-info .video-info-right .video-control-item {
@@ -734,5 +776,8 @@
 	.video-player.mini-player{
 	    width: 360px!important;
 	    height: 202.5px!important;
+	}
+	.subheader .subscribe-button .subscribe-button-parent .button-text{
+		display: none;
 	}
 }

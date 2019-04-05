@@ -813,7 +813,7 @@ body.dark .video-item .video-item-author{
 .display-viewmore,
 .video-viewmore,
 .channel-viewmore{
-    background-color: #dfdfdf;
+    background-color: #ededed;
     padding: 13px 54px;
     margin: 0 auto;
     cursor: pointer;
@@ -836,7 +836,7 @@ body.dark .channel-viewmore:hover{
 .display-viewmore a,
 .video-viewmore a,
 .channel-viewmore a{
-    color: #333;
+    color: hsla(0, 0%, 6.7%, .6);
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -856,6 +856,7 @@ body.dark .channel-viewmore:hover{
 }
 .subheader h2{
     float: left;
+    position: relative;
 }
 .subheader h2 .subheader-avatar{
     width: 32px;
@@ -879,6 +880,8 @@ body.dark .channel-viewmore:hover{
     line-height: 32px;    
     position: relative;
     bottom: 1px;
+    white-space: nowrap;
+
 }
 body.dark .subheader h2 .subheader-desc{
   color: #dfdfdf;
@@ -896,6 +899,130 @@ body.dark .subheader h2 .subheader-desc{
     top: 0;
     border-radius: 3px;
 }
+.subheader .subscribe-button .subcribe-button-count {
+    position: relative;
+    background: #88b7d5;
+}
+.subheader .subscribe-button .subcribe-button-count:after {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-right-color: #88b7d5;
+  border-width: 30px;
+  margin-top: -30px;
+}
+
+
+.subheader .subscribe-button .subscribe-button-wrap {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subheader .subscribe-button .subscribe-button-wrap > div:first-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 10px 0 0;
+    display: none;
+}
+
+
+.subheader .subscribe-button .subscribe-button-parent {
+    position: relative;
+    background: #fb441c;
+    padding: 0 15px;
+    border-radius: 5px;
+} 
+.subheader .subscribe-button .subscribe-button-parent.active{
+    background: #ededed;
+}
+.subheader .subscribe-button .subscribe-button-parent .button-text{
+  margin-right: 8px;
+}
+.subheader .subscribe-button .subscribe-button-parent > .sub {
+    transition: all 0.5s ease-in-out;
+  }
+.subheader .subscribe-button .subscribe-button-parent > .thanks {
+    font-size: 13px;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    top: 0px;
+    left: 0;
+    opacity: 0;
+    display: none;
+}
+.text {
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  font-weight: 600;
+}
+.subheader .subscribe-button .subscribe-button-parent.active .text{
+  color: hsla(0, 0%, 6.7%, .6);
+}
+#subscribe-button-toggle {
+  display: none;
+}
+
+.subscribe-button-button {
+  position: relative;
+  z-index: 999;
+  width: 28px;
+  height: 28px;
+  background: #fb441b;
+  border-radius: 10%;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 0;
+}  
+.subscribe-button-button::before {
+    position: absolute;
+    top: 13px;
+    left: 6px;
+    content: '';
+    width: 16px;
+    height: 2px;
+    background: #ffffff;
+    transform: rotate(90deg);
+}
+.subscribe-button-button::after {
+    position: absolute;
+    top: 13px;
+    left: 6px;
+    content: '';
+    width: 16px;
+    height: 2px;
+    background: #ffffff;
+}
+
+#subscribe-button-toggle:checked ~ .nav {
+  opacity: 1;
+  transform: translateY(10%);
+
+}
+
+.subscribe-button-wrap.active .subscribe-button-button {
+  transform: rotate(135deg);
+  box-shadow: 0 0 0 0 transparent;
+  border-radius: 100%;
+}
+.subscribe-button-wrap.active .subscribe-button-button{
+  border-radius: 50%;
+}
+#subscribe-button-toggle:checked ~ .subbed {
+  opacity: 1;
+  display: block;
+}
+
+
 body.dark .subheader .subscribe-button a:hover{
   color: #fff;
 }
